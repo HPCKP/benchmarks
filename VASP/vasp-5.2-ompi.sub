@@ -1,0 +1,53 @@
+#!/bin/bash 
+#                - Jordi Blasco 11/08/09 -
+##########################################
+# Opcions i parametres de l'SGE
+########################################## 
+# (1) Nom del treball (per identificar) 
+#$ -N TEST-ncores
+# (2) Recursos sol.licitats 
+##$ -pe ompi ncores
+# (3) Fitxers de sortida 
+#$ -cwd 
+#$ -o vasp-TEST-ncores_BINVASP.out 
+#$ -e vasp-TEST-ncores_BINVASP.err 
+# (4) Envia un mail quan acava el treball.
+##$ -m e 
+##$ -M jblasco@fbg.ub.es
+#$ -S /bin/bash
+##########################################
+# Entorn d.usuari 
+########################################## 
+# Es carreguen els moduls a utilitzar 
+. /etc/profile.d/modules.sh
+module load VASP/5.2.8_ics-11.1.072_ompi-1.4.2
+########################################## 
+# transferencia de dades 
+########################################## 
+# Es copien les dades al directori on es llenc,aran els calculs. 
+#cd $TMPDIR 
+mkdir -p /work/jblasco/TEST-ncores-BINVASP
+cd /work/jblasco/TEST-ncores-BINVASP
+cp -pr $HOME/bench2/VASP/TEST/input/* .
+########################################## 
+# calcul 
+########################################## 
+# Es crea un directori de sortida pels resultats.
+export OMP_NUM_THREADS=1
+ulimit -l unlimited
+
+mpirun -np $NSLOTS BINVASP
+
+########################################## 
+# Transferencia dels resultats
+########################################## 
+mkdir -p $HOME/bench2/VASP/TEST/OUT/vasp
+#cp -pr $TMPDIR $HOME/bench/VASP/TEST/OUT/vasp/
+cp -pr /work/jblasco/TEST-ncores-BINVASP $HOME/bench2/VASP/TEST/OUT/vasp/
+##########################################
+# Temps dels resultats
+##########################################
+TEMPS=$(cat OUTCAR | grep "Total CPU time used" | awk '{print $(NF)}')
+echo "$NSLOTS   $TEMPS" >> $HOME/bench2/VASP/benchmark-Nehalem-DP-TEST-BINVASP.dat
+cd
+rm -fr /work/jblasco/TEST-ncores-BINVASP

@@ -1,0 +1,46 @@
+SYSTEM =CeO2 
+
+  Startparameter for this run
+
+NWRITE =  2                
+ISPIN = 2 
+NUPDOWN = 2
+MAGMON = 4*0.0 1*1.0 1*0.0 1*1.0 29*0.0 72*0.0
+VOSKOWN = 1
+LMAXMIX = 6 
+
+ LDAU = .TRUE.
+ LDAUTYPE = 2
+ LDAUL    = 3 -1
+ LDAUU    = 5.0  0.0
+ LDAUPRINT = 2
+
+  Electronic Relaxation
+
+NELM   =  50
+NELMIN = 5
+ENCUT  =  415 
+EDIFF  =  0.1E-03
+LREAL  =  .TRUE.
+
+  Ionic relaxation
+
+EDIFFG =  0.05
+IBRION =  2 
+IWAVPR =  1
+NSW    =  110 
+
+  Electronic relaxation 2 (details)
+
+IALGO  =   38 
+
+  DOS related values
+
+ISMEAR =  0
+SIGMA  =  0.05
+LORBIT =  11 
+  Write flags
+
+LELF   =  .TRUE.
+LVTOT  =  .TRUE.
+NEDOS = 903

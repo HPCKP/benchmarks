@@ -1,0 +1,2 @@
+DFT calculation of a CeO2(111) surface geometry optimization using a p(3x4) unit cell slab with 9 atomic layers.
+The functional used is the PW91 with the inclusion of the on-site  Coulomb interaction (PW91+U). Gamma-point calculation.
