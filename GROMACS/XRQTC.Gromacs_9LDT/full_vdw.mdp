@@ -1,0 +1,47 @@
+;
+;	User spoel (236)
+;	Wed Nov  3 17:12:44 1993
+;	Input file
+;
+title               =  dinamica 
+cpp                 =  /usr/bin/cpp
+constraints         =  all-bonds
+integrator          =  md
+dt                  =  0.002	; ps !
+nsteps              =  100000 ; total 10 ps.
+nstcomm             =  1
+nstxout             =  1000
+nstvout             =  1000
+nstfout             =  0
+nstlog              =  1000
+nstenergy           =  1000
+nstlist             =  10
+ns_type             =  grid
+rlist               =  1.0
+vdwtype             =  switch
+rvdw_switch         =  0.8
+rvdw                =  0.9 
+DispCorr            =  EnerPres 
+coulombtype         =  PME
+rcoulomb            =  1.0
+fourierspacing      =  0.12
+pme_order           =  4
+
+; Berendsen temperature coupling is on in two groups
+Tcoupl              =  berendsen
+tc-grps		    =  Protein Non-Protein	
+tau_t               =  0.1	0.1  
+ref_t               =  320	320 
+; Energy monitoring
+energygrps          =  Protein  Non-Protein 
+; Isotropic pressure coupling is now on
+Pcoupl              =  berendsen
+Pcoupltype          =  isotropic
+tau_p               =  0.5 
+compressibility     =  4.5e-5
+ref_p               =  1.0
+; Generate velocites is oFF At 300 K.
+gen_vel             =  yes 
+gen_temp            =  300.0
+gen_seed            =  173529
+

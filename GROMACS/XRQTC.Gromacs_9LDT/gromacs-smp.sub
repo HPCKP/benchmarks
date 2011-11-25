@@ -1,0 +1,50 @@
+#!/bin/bash 
+# Script per enviar calculs de Gromacs
+# amb ncores processadors amb smp
+#                - Jordi Blasco 12/08/09 -
+##########################################
+# Opcions i parametres de l'SGE
+########################################## 
+# (1) Nom del treball (per identificar) 
+#$ -N GROMACS-TEST-ncores
+# (2) Recursos sol.licitats 
+#$ -pe smp ncores
+#$ -S /bin/bash
+# (3) Fitxers de sortida 
+#$ -cwd 
+#$ -o gromacs-TEST-ncores.out 
+#$ -e gromacs-TEST-ncores.err 
+# (4) Envia un mail quan acava el treball.
+#$ -m e 
+#$ -M jblasco@fbg.ub.es 
+##########################################
+# Entorn d.usuari 
+########################################## 
+# Es carreguen els moduls a utilitzar 
+. /etc/profile.d/modules.sh
+module load gromacs
+########################################## 
+# transferencia de dades 
+########################################## 
+# Es copien les dades al directori on es llenc,aran els calculs. 
+cd $TMPDIR
+mkdir -p gromacs-smp-TEST-ncores
+cd gromacs-smp-TEST-ncores
+cp $HOME/TEST/* .
+########################################## 
+# calcul 
+########################################## 
+# Es crea un directori de sortida pels resultats.
+export OMP_NUM_THREADS=$NSLOTS
+grompp -f full_vdw.mdp -c 9LDT-pt-md-3.gro -p 9LDT-bu.top -o 9LDT-bu.tpr
+mdrun -v -s 9LDT-bu.tpr -o 9LDT-bu.trr > mdrun.out 
+########################################## 
+# Transferencia dels resultats
+########################################## 
+mkdir -p $HOME/TEST/OUT/gromacs
+cp -pr $TMPDIR/* $HOME/TEST/OUT/gromacs/ 
+##########################################
+# Temps dels resultats              
+##########################################
+TEMPS=$(cat mdrun.out | grep Time | awk '{print $3}')
+echo "$NSLOTS	$TEMPS" >> $HOME/TEST/benchmark-smp-TEST.dat

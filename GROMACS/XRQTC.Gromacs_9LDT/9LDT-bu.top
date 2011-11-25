@@ -1,0 +1,43 @@
+;
+;	File '9LDT-bu.top' was generated
+;	By user: onbekend (0)
+;	On host: onbekend
+;	At date: Mon Jun  9 19:05:16 2008
+;
+;	This is your topology file
+;	"If You Touch Me, You'll Get Shocked" (Beastie Boys)
+;
+; Include forcefield parameters
+#include "ffoplsaa.itp"
+
+; Include chain topologies
+#include "9LDT-bu_A.itp"
+#include "9LDT-bu_B.itp"
+#include "9LDT-bu_C.itp"
+#include "9LDT-bu_D.itp"
+
+; Include water topology
+#include "tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include generic topology for ions
+#include "ions.itp"
+
+[ system ]
+; Name
+Protein in water
+
+[ molecules ]
+; Compound        #mols
+Protein_A           1
+Protein_B           1
+Protein_C           1
+Protein_D           1
+SOL         23187
+Cl-         8

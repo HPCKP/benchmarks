@@ -1,0 +1,53 @@
+#!/bin/bash 
+# Script per enviar calculs de Gromacs
+# amb ncores processadors amb OpenMPI
+#                - Jordi Blasco 12/08/09 -
+##########################################
+# Opcions i parametres de l'SGE
+########################################## 
+# (1) Nom del treball (per identificar) 
+#$ -N TEST-ncores
+# (2) Recursos sol.licitats 
+#$ -pe ompi ncores
+#$ -S /bin/bash
+# (3) Fitxers de sortida 
+#$ -cwd 
+#$ -o gromacs-TEST-ncores.out 
+#$ -e gromacs-TEST-ncores.err 
+# (4) Envia un mail quan acava el treball.
+#$ -m e 
+#$ -M jblasco@fbg.ub.es 
+##########################################
+# Entorn d.usuari 
+########################################## 
+# Es carreguen els moduls a utilitzar 
+. /etc/profile.d/modules.sh
+module load GROMACS/4.0.7_ics-11.1.072_ompi-1.4.2
+########################################## 
+# transferencia de dades 
+########################################## 
+# Es copien les dades al directori on es llenc,aran els calculs. 
+cd $TMPDIR
+mkdir -p gromacs-ompi-TEST-ncores
+cd gromacs-ompi-TEST-ncores
+cp $HOME/bench/GROMACS/TEST/input/* .
+########################################## 
+# calcul 
+########################################## 
+# Es crea un directori de sortida pels resultats.
+NOMA="128DSPC-32CHOL_bilayer"
+export OMP_NUM_THREADS=1
+grompp -f "128DSPC-32CHOL_bilayer.mdp" -c "128DSPC-32CHOL_bilayer.gro" -p "128DSPC-32CHOL_bilayer.top" -n "128DSPC-32CHOL_bilayer-lipid.ndx" -o "$NOMA-1.tpr"
+mpirun -np $NSLOTS mdrun_mpi -s "$NOMA-1.tpr" -o "$NOMA-1.trr" -c "$NOMA-1.gro" -v -g "$NOMA-1.log" -e "$NOMA-1.edr"
+
+
+########################################## 
+# Transferencia dels resultats
+########################################## 
+mkdir -p $HOME/bench/GROMACS/TEST/OUT/gromacs
+cp -pr $TMPDIR/* $HOME/bench/GROMACS/TEST/OUT/gromacs/ 
+##########################################
+# Temps dels resultats              
+##########################################
+TEMPS=$(cat $NOMA-1.log | grep Time: | awk '{print$3}')
+echo "$NSLOTS   $TEMPS" >> $HOME/bench/GROMACS/TEST/benchmark-ompi-TEST.dat
