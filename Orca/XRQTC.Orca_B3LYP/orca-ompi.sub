@@ -1,0 +1,51 @@
+#!/bin/bash 
+# Script per enviar calculs de Gromacs
+# amb ncores processadors amb OpenMPI
+#                - Jordi Blasco 12/08/09 -
+##########################################
+# Opcions i parametres de l'SGE
+########################################## 
+# (1) Nom del treball (per identificar) 
+#$ -N TEST-ncores
+# (2) Recursos sol.licitats 
+#$ -pe ompi ncores
+#$ -S /bin/bash
+# (3) Fitxers de sortida 
+#$ -cwd 
+#$ -o orca-TEST-ncores.out 
+#$ -e orca-TEST-ncores.err 
+# (4) Envia un mail quan acava el treball.
+#$ -m e 
+#$ -M jblasco@fbg.ub.es 
+##########################################
+# Entorn d.usuari 
+########################################## 
+# Es carreguen els moduls a utilitzar 
+. /etc/profile.d/modules.sh
+module load ORCA
+########################################## 
+# transferencia de dades 
+########################################## 
+# Es copien les dades al directori on es llenc,aran els calculs. 
+cd $TMPDIR
+mkdir -p orca-ompi-TEST-ncores
+cd orca-ompi-TEST-ncores
+cp $HOME/bench/ORCA/TEST/input/* .
+########################################## 
+# calcul 
+########################################## 
+# Es crea un directori de sortida pels resultats.
+export OMP_NUM_THREADS=1
+orca TEST.inp > TEST.out
+
+########################################## 
+# Transferencia dels resultats
+########################################## 
+mkdir -p $HOME/bench/ORCA/TEST/OUT/orca
+cp -pr $TMPDIR/* $HOME/bench/ORCA/TEST/OUT/orca/ 
+##########################################
+# Temps dels resultats              
+##########################################
+TEMPS=$(cat TEST.out | grep Time: | awk '{print$3}')
+echo "$NSLOTS   $TEMPS" >> $HOME/bench/ORCA/TEST/benchmark-ompi-TEST.dat
+
