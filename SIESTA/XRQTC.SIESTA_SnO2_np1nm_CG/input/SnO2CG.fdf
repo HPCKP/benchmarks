@@ -1,0 +1,75 @@
+# SnO2 spherical nanopartical (d=1nm): CG structural relaxation
+
+SystemLabel      SnO2CG
+
+NumberOfSpecies  2
+%block ChemicalSpeciesLabel
+    1   8   O
+    2   50  Sn
+%endblock ChemicalSpeciesLabel
+
+%include atomcoord.fdf
+
+%Block PAO.Basis
+Sn  4      0.57189
+n=5   0   2   E    48.97553     3.16263
+   4.52650     3.51761
+   1.00000     1.00000
+n=5   1   2   E     0.70334     0.26859
+   5.81562     3.65820
+   1.00000     1.00000
+n=5   2   1   E    68.0000     1.000000
+   4.0
+   1.00000
+n=4   2   2   E    68.33032     0.68970
+   4.0         3.5
+   1.00000     1.0
+
+     
+O    3     -0.24021
+ n=2   0   2   E    64.35698     2.24090
+     4.39710     2.52029
+     1.00000     1.00000
+ n=2   1   2   E     7.99069     4.88285
+     6.12535     2.30982
+     1.00000     1.00000
+ n=3   2   1   E    20.95104     3.07361
+     5.07487
+     1.00000
+%EndBlock PAO.Basis
+
+
+KgridCutoff          5. Ang
+MeshCutoff           175. Ry
+
+#SpinPolarized         yes
+xc.functional         GGA
+xc.authors            PBE
+
+SolutionMethod        diagon        # OrderN or Diagon
+
+MaxSCFIterations       500
+DM.MixingWeight       0.05
+DM.Tolerance          1.d-4
+DM.NumberPulay         8
+ElectronicTemperature  300 K
+
+DM.UseSaveDM          true
+
+UseSaveData            true
+
+MD.TypeOfRun           cg           # Type of dynamics:
+MD.VariableCell        .false.
+MD.NumCGsteps          5000
+MD.MaxForceTol        0.04 eV/Ang
+MD.MaxStressTol       0.04 eV/Ang**3
+
+SaveDeltaRho                  .true.
+SaveRho                       .true.
+SaveElectrostaticPotential    .true.
+SaveTotalPotential            .true.
+WriteDenchar                  .true.
+
+BandLinesScale               pi/a
+
+

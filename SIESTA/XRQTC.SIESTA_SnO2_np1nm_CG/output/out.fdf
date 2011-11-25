@@ -1,0 +1,284 @@
+
+#FDF: Opened INPUT_TMP.650853196  for input. Unit: 12
+
+fdf-debug              0     # Default value
+SystemName                              # Default value
+SystemLabel     SnO2CG                                                                                                                              
+WriteXML              T     # Default value
+alloc_report_level              0     # Default value
+xc.functional     GGA                                                                                                                                 
+xc.authors     PBE                                                                                                                                 
+user-basis              F     # Default value
+user-basis-netcdf              F     # Default value
+PAO.BasisSize     standard            # Default value
+PAO.BasisType     split          # Default value
+Number_of_species                        2
+
+%block ChemicalSpeciesLabel                                                    
+    1   8   O                                                                  
+    2   50  Sn                                                                 
+%endblock ChemicalSpeciesLabel                                                 
+ 
+
+%Block PAO.Basis                                                               
+Sn  4      0.57189                                                             
+n=5   0   2   E    48.97553     3.16263                                        
+   4.52650     3.51761                                                         
+   1.00000     1.00000                                                         
+n=5   1   2   E     0.70334     0.26859                                        
+   5.81562     3.65820                                                         
+   1.00000     1.00000                                                         
+n=5   2   1   E    68.0000     1.000000                                        
+   4.0                                                                         
+   1.00000                                                                     
+n=4   2   2   E    68.33032     0.68970                                        
+   4.0         3.5                                                             
+   1.00000     1.0                                                             
+O    3     -0.24021                                                            
+ n=2   0   2   E    64.35698     2.24090                                       
+     4.39710     2.52029                                                       
+     1.00000     1.00000                                                       
+ n=2   1   2   E     7.99069     4.88285                                       
+     6.12535     2.30982                                                       
+     1.00000     1.00000                                                       
+ n=3   2   1   E    20.95104     3.07361                                       
+     5.07487                                                                   
+     1.00000                                                                   
+%EndBlock PAO.Basis                                                            
+ 
+PAO.EnergyShift         0.2000000000E-01 Ry     # Default value
+PAO.SplitNorm         0.1500000000         # Default value
+PAO.SplitNorm         0.1500000000         # Default value
+PAO.EnergyShift         0.2000000000E-01 Ry     # Default value
+PAO.SplitNorm         0.1500000000         # Default value
+PAO.SplitNorm         0.1500000000         # Default value
+PAO.BasisType     split          # Default value
+Atom-Setup-Only              F     # Default value
+MD.UseStructFile              F     # Default value
+LatticeConstant          1.889726878           Bohr
+# Above item originally: LatticeConstant          1.000000000     Ang       
+
+ %block LatticeParameters                                                      
+  20.0000000  20.0000000  20.0000000   90.000000   90.000000   90.000000       
+ %endblock LatticeParameters                                                   
+ 
+
+ %block LatticeParameters                                                      
+  20.0000000  20.0000000  20.0000000   90.000000   90.000000   90.000000       
+ %endblock LatticeParameters                                                   
+ 
+AtomicCoordinatesFormat     Fractional                                                                                                                          
+NumberOfAtoms                       51
+ZM.UnitsLength     Bohr           # Default value
+ZM.UnitsAngle     rad            # Default value
+ZM.ForceTolLength         0.1555740000E-02 Ry/Bohr     # Default value
+ZM.ForceTolAngle         0.3565490000E-02 Ry/rad     # Default value
+ZM.MaxDisplLength         0.2000000000     Bohr     # Default value
+ZM.MaxDisplAngle         0.3000000000E-02 rad     # Default value
+ZM.CalcAllForces              F     # Default value
+
+ %block AtomicCoordinatesAndAtomicSpecies                                      
+   0.0000000   0.0000000   0.0000000   2                                       
+   0.1184300   0.1184300   0.0796500   2                                       
+   0.0722400   0.0722400   0.0000000   1                                       
+   0.1646100   0.1646100   0.0000000   1                                       
+   0.0461900   0.1906600   0.0796500   1                                       
+   0.1906600   0.0461900   0.0796500   1                                       
+   0.0000000   0.0000000   0.1593000   2                                       
+   0.0722400   0.0722400   0.1593000   1                                       
+   0.0000000   0.0000000  -0.1593000   2                                       
+   0.1184300   0.1184300  -0.0796500   2                                       
+   0.0722400   0.0722400  -0.1593000   1                                       
+   0.0461900   0.1906600  -0.0796500   1                                       
+   0.1906600   0.0461900  -0.0796500   1                                       
+   0.0000000   0.2368500   0.0000000   2                                       
+   0.2368500   0.0000000   0.0000000   2                                       
+  -0.1184300  -0.1184300   0.0796500   2                                       
+  -0.1646100  -0.1646100   0.0000000   1                                       
+  -0.0722400  -0.0722400   0.0000000   1                                       
+  -0.1906600  -0.0461900   0.0796500   1                                       
+  -0.0461900  -0.1906600   0.0796500   1                                       
+  -0.1184300  -0.1184300  -0.0796500   2                                       
+  -0.0722400  -0.0722400  -0.1593000   1                                       
+  -0.1906600  -0.0461900  -0.0796500   1                                       
+  -0.0461900  -0.1906600  -0.0796500   1                                       
+  -0.1184300   0.1184300  -0.0796500   2                                       
+  -0.1646100   0.0722400  -0.1593000   1                                       
+  -0.0722400   0.1646100  -0.1593000   1                                       
+  -0.0461900   0.0461900  -0.0796500   1                                       
+   0.1184300  -0.1184300  -0.0796500   2                                       
+   0.0722400  -0.1646100  -0.1593000   1                                       
+   0.1646100  -0.0722400  -0.1593000   1                                       
+   0.0461900  -0.0461900  -0.0796500   1                                       
+   0.0000000  -0.2368500   0.0000000   2                                       
+   0.1184300  -0.1184300   0.0796500   2                                       
+   0.0722400  -0.1646100   0.0000000   1                                       
+   0.1646100  -0.0722400   0.0000000   1                                       
+   0.0461900  -0.0461900   0.0796500   1                                       
+  -0.2368500   0.0000000   0.0000000   2                                       
+  -0.1184300   0.1184300   0.0796500   2                                       
+  -0.1646100   0.0722400   0.0000000   1                                       
+  -0.0722400   0.1646100   0.0000000   1                                       
+  -0.0461900   0.0461900   0.0796500   1                                       
+  -0.0722400  -0.0722400   0.1593000   1                                       
+  -0.1646100   0.0722400   0.1593000   1                                       
+  -0.0722400   0.1646100   0.1593000   1                                       
+  -0.0461900   0.0461900   0.2389500   1                                       
+   0.0722400  -0.1646100   0.1593000   1                                       
+   0.1646100  -0.0722400   0.1593000   1                                       
+   0.0461900  -0.0461900   0.2389500   1                                       
+  -0.0461900   0.0461900  -0.2389500   1                                       
+   0.0461900  -0.0461900  -0.2389500   1                                       
+ %endblock AtomicCoordinatesAndAtomicSpecies                                   
+ 
+SpinPolarized              F     # Default value
+NonCollinearSpin              F     # Default value
+SystemName          # Default value
+LongOutput              F     # Default value
+NumberOfSpecies                        2
+WriteDenchar              T
+WriteMullikenPop              0     # Default value
+MeshCutoff          175.0000000             Ry
+# Above item originally: MeshCutoff          175.0000000     Ry        
+NetCharge          0.000000000         # Default value
+MaxSCFIterations                      500
+DM.NumberPulay                        8
+DM.NumberBroyden              0     # Default value
+DM.MixSCF1              F     # Default value
+DM.PulayOnFile              F     # Default value
+DM.MixingWeight         0.5000000000E-01
+DM.OccupancyTolerance         0.1000000000E-11     # Default value
+DM.NumberKick              0     # Default value
+DM.KickMixingWeight         0.5000000000         # Default value
+DM.Tolerance         0.1000000000E-03
+DM.RequireEnergyConvergence              F     # Default value
+DM.EnergyTolerance         0.7349806700E-05 Ry     # Default value
+UseSaveData              T
+DM.UseSaveDM              T
+NeglNonOverlapInt              F     # Default value
+SolutionMethod     diagon                                                                                                                              
+Diag.DivideAndConquer              T     # Default value
+Diag.Memory          1.000000000         # Default value
+ElectronicTemperature         0.1900069269E-02         Ry
+# Above item originally: ElectronicTemperature          300.0000000     K         
+FixSpin              F     # Default value
+ON.MaxNumIter           1000     # Default value
+ON.etol         0.1000000000E-07     # Default value
+ON.eta          0.000000000     Ry     # Default value
+ON.eta_alpha          0.000000000     Ry     # Default value
+ON.eta_beta          0.000000000     Ry     # Default value
+On.RcLWF          9.500000000     Bohr     # Default value
+ON.UseSaveLWF              T     # Default value
+ON.functional     kim     # Default value
+ON.ChemicalPotentialUse              F     # Default value
+ON.ChemicalPotential              F     # Default value
+ON.ChemicalPotentialRc          9.500000000     Bohr     # Default value
+ON.ChemicalPotentialTemperature         0.5000000000E-01 Ry     # Default value
+ON.ChemicalPotentialOrder            100     # Default value
+MD.VariableCell              F
+MD.TypeOfRun     cg                                                                                                                                  
+MD.UseSaveCG              T     # Default value
+Optim.Broyden              F     # Default value
+MD.NumCGsteps                     5000
+MD.MaxCGDispl         0.2000000000     Bohr     # Default value
+MD.MaxForceTol         0.1555739508E-02    Ry/Bohr
+# Above item originally: MD.MaxForceTol         0.4000000000E-01 eV/Ang    
+MD.MaxStressTol         0.4356499986E-03 Ry/Bohr**3
+# Above item originally: MD.MaxStressTol         0.4000000000E-01 eV/Ang**3 
+MD.InitialTimeStep              1     # Default value
+MD.FinalTimeStep              1     # Default value
+MD.LengthTimeStep          1.000000000     fs     # Default value
+MD.Quench              F     # Default value
+MD.InitialTemperature          0.000000000     K     # Default value
+MD.TargetTemperature          0.000000000     K     # Default value
+MD.TargetPressure          0.000000000     Ry/Bohr**3     # Default value
+MD.NoseMass          100.0000000     Ry*fs**2     # Default value
+MD.ParrinelloRahmanMass          100.0000000     Ry*fs**2     # Default value
+MD.AnnealOption     TemperatureAndPressure     # Default value
+MD.TauRelax          100.0000000     fs     # Default value
+MD.BulkModulus         0.6797730000E-02 Ry/Bohr**3     # Default value
+MD.FCDispl         0.4000000000E-01 Bohr     # Default value
+MD.FCfirst              1     # Default value
+MD.FClast             51     # Default value
+Harris_functional              F     # Default value
+WriteKpoints              F     # Default value
+WriteForces              F     # Default value
+WriteDM              T     # Default value
+WriteBands              F     # Default value
+WriteKbands              F     # Default value
+WriteEigenvalues              F     # Default value
+WriteCoorStep              F     # Default value
+WriteCoorInitial              T     # Default value
+WriteMDhistory              F     # Default value
+WriteMDXmol              T     # Default value
+UseSaveData              T
+MD.UseSaveXV              T     # Default value
+MD.UseSaveZM              T     # Default value
+SaveHS              F     # Default value
+FixAuxillaryCell              F     # Default value
+ReInitialiseDM              F     # Default value
+MullikenInSCF              F     # Default value
+WarningMinimumAtomicDistance          1.000000000     Bohr     # Default value
+BornCharge              F     # Default value
+Diag.ParallelOverK              F     # Default value
+Output-Structure-Only              F     # Default value
+RcSpatial          0.000000000     Bohr     # Default value
+ProcessorGridX              1     # Default value
+ProcessorGridY              1     # Default value
+ProcessorGridZ              1     # Default value
+NumberOfEigenStates            813     # Default value
+kgrid_cutoff          9.448634389           Bohr
+# Above item originally: kgrid_cutoff          5.000000000     Ang       
+LongOutput              F     # Default value
+WriteWaveFunctions              F     # Default value
+AtomicCoordinatesFormat     Fractional                                                                                                                          
+AtomCoorFormatOut     Fractional                 # Default value
+LatticeConstant          1.889726878           Bohr
+# Above item originally: LatticeConstant          1.000000000     Ang       
+DM.FormattedFiles              F     # Default value
+DM.FormattedInput              F     # Default value
+DM.FormattedOutput              F     # Default value
+Harris_functional              F     # Default value
+MeshSubDivisions              2     # Default value
+LatticeConstant          1.889726878           Bohr
+# Above item originally: LatticeConstant          1.000000000     Ang       
+
+ %block LatticeParameters                                                      
+  20.0000000  20.0000000  20.0000000   90.000000   90.000000   90.000000       
+ %endblock LatticeParameters                                                   
+ 
+
+ %block LatticeParameters                                                      
+  20.0000000  20.0000000  20.0000000   90.000000   90.000000   90.000000       
+ %endblock LatticeParameters                                                   
+ 
+DirectPhi              F     # Default value
+LatticeConstant          1.889726878           Bohr
+# Above item originally: LatticeConstant          1.000000000     Ang       
+
+ %block LatticeParameters                                                      
+  20.0000000  20.0000000  20.0000000   90.000000   90.000000   90.000000       
+ %endblock LatticeParameters                                                   
+ 
+
+ %block LatticeParameters                                                      
+  20.0000000  20.0000000  20.0000000   90.000000   90.000000   90.000000       
+ %endblock LatticeParameters                                                   
+ 
+Diag.AllInOne              F     # Default value
+Diag.DivideAndConquer              T     # Default value
+Diag.NoExpert              F     # Default value
+Diag.PreRotate              F     # Default value
+Diag.Use2D              T     # Default value
+SingleExcitation              F     # Default value
+OccupationFunction     FD     # Default value
+OccupationFunction     FD     # Default value
+WriteCoorXmol              F     # Default value
+WriteCoorCerius              F     # Default value
+OpticalCalculation              F     # Default value
+SaveRho              T
+SaveDeltaRho              T
+SaveElectrostaticPotential              T
+SaveTotalPotential              T
+SaveIonicCharge              F     # Default value
+SaveTotalCharge              F     # Default value

@@ -1,0 +1,110 @@
+# relajacion (coord crist & base & pseudo wth semicore & GGA)
+SystemLabel      SnO2CG
+
+NumberOfSpecies  2
+%block ChemicalSpeciesLabel
+    1   8   O
+    2   50  Sn
+%endblock ChemicalSpeciesLabel
+
+%include atomcoord.fdf
+
+%Block PAO.Basis
+Sn  4      0.57189
+n=5   0   2   E    48.97553     3.16263
+   4.52650     3.51761
+   1.00000     1.00000
+n=5   1   2   E     0.70334     0.26859
+   5.81562     3.65820
+   1.00000     1.00000
+n=5   2   1   E    68.0000     1.000000
+   4.0
+   1.00000
+n=4   2   2   E    68.33032     0.68970
+   4.0         3.5
+   1.00000     1.0
+
+     
+O    3     -0.24021
+ n=2   0   2   E    64.35698     2.24090
+     4.39710     2.52029
+     1.00000     1.00000
+ n=2   1   2   E     7.99069     4.88285
+     6.12535     2.30982
+     1.00000     1.00000
+ n=3   2   1   E    20.95104     3.07361
+     5.07487
+     1.00000
+%EndBlock PAO.Basis
+
+
+KgridCutoff          5. Ang
+MeshCutoff           175. Ry
+
+#SpinPolarized         yes
+xc.functional         GGA
+xc.authors            PBE
+
+SolutionMethod        diagon        # OrderN or Diagon
+
+MaxSCFIterations       500
+DM.MixingWeight       0.05
+DM.Tolerance          1.d-4
+DM.NumberPulay         8
+ElectronicTemperature  300 K
+
+DM.UseSaveDM          true
+
+UseSaveData            true
+
+MD.TypeOfRun           cg           # Type of dynamics:
+MD.VariableCell        .false.
+MD.NumCGsteps          5000
+MD.MaxForceTol        0.04 eV/Ang
+MD.MaxStressTol       0.04 eV/Ang**3
+
+#WriteMullikenPop       2
+
+#%block ProjectedDensityOfStates
+#   -15.00  +7.00  0.5  10000  eV
+#%endblock ProjectedDensityOfStates
+
+SaveDeltaRho                  .true.
+SaveRho                       .true.
+SaveElectrostaticPotential    .true.
+SaveTotalPotential            .true.
+WriteDenchar                  .true.
+
+BandLinesScale               pi/a
+
+#%block BandLines
+#1     0.0 0.0 0.0 \Gamma
+#30    1.0 0.0 0.0 X
+#30    1.0 1.0 0.0 M
+#40    0.0 0.0 0.0 \Gamma
+#25    0.0 0.0 1.4868 Z
+#30    1.0 0.0 1.4868 R
+#30    1.0 1.0 1.4868 A
+#%endblock BandLines
+
+
+#%block LocalDensityOfStates
+#   -14.5  6.0 eV
+#%endblock LocalDensityOfStates
+#WriteEigenvalues              .true.
+#MD.TypeOfRun           FC
+#MD.FCdispl             0.02000  Bohr
+
+#MD.FCfirst             1     # Default value
+#MD.FClast              6
+
+#MD.BornCharge          1
+#%block PolarizationGrids
+#10  5  5
+# 5 10  5
+# 5  5 10
+#%endblock PolarizationGrids
+#
+#WriteMullikenPop 1
+#WriteHirshfeldPop T
+#WriteVoronoiPop T
