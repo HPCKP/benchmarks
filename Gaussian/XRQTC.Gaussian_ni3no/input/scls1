@@ -1,0 +1,16 @@
+#!/bin/tcsh
+#$ -N ni3nols1 
+#$ -cwd
+
+setenv g09root /home/g1eliseo/g09
+source $g09root/g09/bsd/g09.login
+
+setenv GAUSS_SCRDIR $TMPDIR
+
+cd $TMPDIR
+cp -pr $HOME/ni3no/ni3nols1.inpg .
+cp -pr $HOME/ni3no/ni3nols1.chk .
+g09 < ./ni3nols1.inpg > ni3nols1.out
+cp ni3nols1.out $HOME/ni3no/.
+cp ni3nols1.chk $HOME/ni3no/ni3nols1.chk
+
