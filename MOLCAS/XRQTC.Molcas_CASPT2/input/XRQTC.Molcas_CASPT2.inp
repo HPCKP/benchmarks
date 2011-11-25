@@ -1,0 +1,102 @@
+* Calcul Molcas 7.4
+ &SEWARD &END
+Title
+ CX5 [CH3C(O)OOH...O2] TRIPLET, CAS(16,14)/aug-cc-pVDZ OPT. GEO.                
+Basis set
+C.aug-cc-pVTZ.Kendall.11s6p3d2f.5s4p3d2f.                                       
+Cartesian p d f
+C01           2.5009856259  -0.7333305636 0.3758497141  Angstrom
+End of basis
+Basis set
+C.aug-cc-pVTZ.Kendall.11s6p3d2f.5s4p3d2f.                                       
+Cartesian p d f
+C02           1.6329300437  0.3876391211  -0.1123283164 Angstrom
+End of basis
+Basis set
+O.aug-cc-pVTZ.Kendall.11s6p3d2f.5s4p3d2f.                                       
+Cartesian p d f
+O03           1.9124119950  1.5620814467  -0.0689453075 Angstrom
+End of basis
+Basis set
+H.aug-cc-pVTZ.Dunning.6s3p2d.4s3p2d.                                            
+Cartesian p d f
+H04           3.4340022037  -0.2997274799 0.7205132933  Angstrom
+End of basis
+Basis set
+H.aug-cc-pVTZ.Dunning.6s3p2d.4s3p2d.                                            
+Cartesian p d f
+H05           2.0126149373  -1.2645627654 1.1891229753  Angstrom
+End of basis
+Basis set
+H.aug-cc-pVTZ.Dunning.6s3p2d.4s3p2d.                                            
+Cartesian p d f
+H06           2.6868160061  -1.4450771498 -0.4248242800 Angstrom
+End of basis
+Basis set
+O.aug-cc-pVTZ.Kendall.11s6p3d2f.5s4p3d2f.                                       
+Cartesian p d f
+O07           0.3987762358  0.0919760494  -0.6964981590 Angstrom
+End of basis
+Basis set
+O.aug-cc-pVTZ.Kendall.11s6p3d2f.5s4p3d2f.                                       
+Cartesian p d f
+O08           0.1388943571  -1.3621697149 -0.6188561390 Angstrom
+End of basis
+Basis set
+H.aug-cc-pVTZ.Dunning.6s3p2d.4s3p2d.                                            
+Cartesian p d f
+H09           -0.7496986458 -1.3290297171 -0.2917142873 Angstrom
+End of basis
+Basis set
+O.aug-cc-pVTZ.Kendall.11s6p3d2f.5s4p3d2f.                                       
+Cartesian p d f
+O10           -3.0345343686 -0.3228671680 0.4961962369  Angstrom
+End of basis
+Basis set
+O.aug-cc-pVTZ.Kendall.11s6p3d2f.5s4p3d2f.                                       
+Cartesian p d f
+O11           -3.3777263902 0.8274019416  0.2856902695  Angstrom
+End of basis
+End of input
+
+
+!ls -l $WorkDir
+>>LINK -FORCE $CALC/$Project.McOrb INPORB
+>>LINK -FORCE $CALC/$Project.RasOrb RASORB
+
+ &RASSCF &END
+Title
+ CX5 [CH3C(O)OOH...O2] TRIPLET, CAS(16,14)/aug-cc-pVDZ OPT. GEO.                
+PT2
+Symmetry
+ 1
+Spin
+ 3
+NActEl
+16 0 0
+Frozen
+  7
+Inactive
+ 13
+Ras2
+14
+Ciroot
+ 1 1
+ 1
+LumOrb
+End of input
+
+
+!ls -l $WorkDir
+>>LINK -FORCE $CALC/$Project.Pt2Orb PT2ORB
+
+ &CASPT2 &END
+Title
+ CX5 [CH3C(O)OOH...O2] TRIPLET, CAS(16,14)/aug-cc-pVDZ OPT. GEO.                
+MaxIterations
+ 99
+OUTPUT=LONG
+End of input
+
+
+!ls -l $WorkDir

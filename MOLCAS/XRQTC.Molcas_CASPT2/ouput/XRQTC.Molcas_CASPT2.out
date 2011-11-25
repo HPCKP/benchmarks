@@ -1,0 +1,1459 @@
+g7node64-2
+Start of job: ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ
+Current directory: /home/user/calc.dir
+Scratch directory: /scratch/user/Molc7-5542.tmp
+--- Start Module: auto at Fri Feb 12 00:37:50 2010 
+License is going to expire in 211 days on Saturday Septempber 11st, 2010
+Everything is fine. Going to run MOLCAS!
+                                                                                                   
+                                              ^^^^^            M O L C A S                         
+                                             ^^^^^^^           version 7.4 patchlevel 045           
+                               ^^^^^         ^^^^^^^                                               
+                              ^^^^^^^        ^^^ ^^^                                               
+                              ^^^^^^^       ^^^^ ^^^                                               
+                              ^^^ ^^^       ^^^^ ^^^                                               
+                              ^^^ ^^^^      ^^^  ^^^                                               
+                              ^^^  ^^ ^^^^^  ^^  ^^^^                                              
+                             ^^^^      ^^^^   ^   ^^^                                              
+                             ^   ^^^   ^^^^   ^^^^  ^                                              
+                            ^   ^^^^    ^^    ^^^^   ^                                             
+                        ^^^^^   ^^^^^   ^^   ^^^^^   ^^^^^                                         
+                     ^^^^^^^^   ^^^^^        ^^^^^    ^^^^^^^                                      
+                 ^^^^^^^^^^^    ^^^^^^      ^^^^^^^   ^^^^^^^^^^^                                  
+               ^^^^^^^^^^^^^   ^^^^^^^^^^^^^^^^^^^^   ^^^^^^^^^^^^^                                
+               ^^^^^^^^^^^^^   ^^^^             ^^^   ^^^      ^^^^                                
+               ^^^^^^^^^^^^^                          ^^^      ^^^^                                
+               ^^^^^^^^^^^^^       ^^^^^^^^^^^^        ^^      ^^^^                                
+               ^^^^^^^^^^^^      ^^^^^^^^^^^^^^^^      ^^      ^^^^                                
+               ^^^^^^^^^^^^    ^^^^^^^^^^^^^^^^^^^^    ^^      ^^^^                                
+               ^^^^^^^^^^^^    ^^^^^^^^^^^^^^^^^^^^    ^^      ^^^^    ^^^^^     ^^^    ^^^^^^     
+               ^^^^^^^^^^^^   ^^^^^^^^^^^^^^^^^^^^^^   ^^      ^^^^   ^^^^^^^    ^^^   ^^^  ^^^    
+               ^^^^^^^^^^^    ^^^^^^^^^^^^^^^^^^^^^^   ^       ^^^^  ^^^    ^^   ^^^   ^^    ^^    
+               ^^^^^^^^^^^     ^^^^^^^^^^^^^^^^^^^^            ^^^^  ^^         ^^ ^^  ^^^^^       
+               ^^^^^^^^^^      ^^^^^^^^^^^^^^^^^^^^        ^   ^^^^  ^^         ^^ ^^   ^^^^^^     
+               ^^^^^^^^          ^^^^^^^^^^^^^^^^          ^   ^^^^  ^^        ^^^^^^^     ^^^^    
+               ^^^^^^      ^^^     ^^^^^^^^^^^^     ^      ^   ^^^^  ^^^   ^^^ ^^^^^^^ ^^    ^^    
+                         ^^^^^^                    ^^      ^   ^^^^   ^^^^^^^  ^^   ^^ ^^^  ^^^    
+                      ^^^^^^^^^^^^             ^^^^^^      ^           ^^^^^  ^^     ^^ ^^^^^^     
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                  
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                      
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                         
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^                                             
+                               ^^^^^^^^^^^^^^^^^^^^                                                
+                                   ^^^^^^^^^^^^                                                    
+                                       ^^^^^^                                                      
+
+                           Copyright, all rights, reserved:                                        
+                         Permission is hereby granted to use                                       
+                but not to reproduce or distribute any part of this                                
+             program. The use is restricted to research purposes only.                             
+                            Lund University Sweden, 2008.                                          
+                                                                                                   
+ For the author list and the recommended citation consult section 1.5 of the MOLCAS user's guide.  
+
+
+
+   -------------------------------------------------------------------
+  |                                                                   
+  |   Project         = ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ
+  |   Submitted from  = /scratch/user/Molc7-5542.tmp
+  |   Scratch area    = /scratch/user/Molc7-5542.tmp
+  |   Save outputs to = /scratch/user/Molc7-5542.tmp
+  |                                                                   
+  |   Scratch area is empty
+  |                                                                   
+  |     MOLCAS_BASLIB = /home/user/MOLCAS_BASLIB
+  |                                                                   
+   -------------------------------------------------------------------
+--- Start Module: seward at Fri Feb 12 00:37:50 2010 
+
+
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+                                  MOLCAS executing module SEWARD with 4000 MB of memory                                 
+                                              at 00:37:50 Fri Feb 12 2010                                               
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+
+               SEWARD will generate:
+                  Multipole Moment integrals up to order  2
+                  Kinetic Energy integrals
+                  Nuclear Attraction integrals (point charge)
+                  One-Electron Hamiltonian integrals
+                  Two-Electron Repulsion integrals
+
+ Title:
+                CX5 [CH3C(O)OOH...O2] TRIPLET, CAS(16,14)/aug-cc-pVDZ OPT. GEO.         
+
+
+                   Integrals are discarded if absolute value <: 0.10E-12
+                   Integral cutoff threshold is set to       <: 0.10E-11
+
+
+                    Character Table for C1 
+
+                             E  
+                    a        1  x, y, xy, Rz, z, xz, Ry, yz, Rx, I
+
+ Basis set label:C.AUG-CC-PVTZ.KENDALL.11S6P3D2F.5S4P3D2F......                                  
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  6.000000 au
+ Associated Actual Charge     6.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s      11       5        X                  
+    p       6       4        X                  
+    d       3       3        X                  
+    f       2       2        X                  
+ Basis set label:C.AUG-CC-PVTZ.KENDALL.11S6P3D2F.5S4P3D2F......                                  
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  6.000000 au
+ Associated Actual Charge     6.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s      11       5        X                  
+    p       6       4        X                  
+    d       3       3        X                  
+    f       2       2        X                  
+ Basis set label:O.AUG-CC-PVTZ.KENDALL.11S6P3D2F.5S4P3D2F......                                  
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  8.000000 au
+ Associated Actual Charge     8.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s      11       5        X                  
+    p       6       4        X                  
+    d       3       3        X                  
+    f       2       2        X                  
+ Basis set label:H.AUG-CC-PVTZ.DUNNING.6S3P2D.4S3P2D......                                       
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  1.000000 au
+ Associated Actual Charge     1.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s       6       4        X                  
+    p       3       3        X                  
+    d       2       2        X                  
+ Basis set label:H.AUG-CC-PVTZ.DUNNING.6S3P2D.4S3P2D......                                       
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  1.000000 au
+ Associated Actual Charge     1.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s       6       4        X                  
+    p       3       3        X                  
+    d       2       2        X                  
+ Basis set label:H.AUG-CC-PVTZ.DUNNING.6S3P2D.4S3P2D......                                       
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  1.000000 au
+ Associated Actual Charge     1.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s       6       4        X                  
+    p       3       3        X                  
+    d       2       2        X                  
+ Basis set label:O.AUG-CC-PVTZ.KENDALL.11S6P3D2F.5S4P3D2F......                                  
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  8.000000 au
+ Associated Actual Charge     8.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s      11       5        X                  
+    p       6       4        X                  
+    d       3       3        X                  
+    f       2       2        X                  
+ Basis set label:O.AUG-CC-PVTZ.KENDALL.11S6P3D2F.5S4P3D2F......                                  
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  8.000000 au
+ Associated Actual Charge     8.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s      11       5        X                  
+    p       6       4        X                  
+    d       3       3        X                  
+    f       2       2        X                  
+ Basis set label:H.AUG-CC-PVTZ.DUNNING.6S3P2D.4S3P2D......                                       
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  1.000000 au
+ Associated Actual Charge     1.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s       6       4        X                  
+    p       3       3        X                  
+    d       2       2        X                  
+ Basis set label:O.AUG-CC-PVTZ.KENDALL.11S6P3D2F.5S4P3D2F......                                  
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  8.000000 au
+ Associated Actual Charge     8.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s      11       5        X                  
+    p       6       4        X                  
+    d       3       3        X                  
+    f       2       2        X                  
+ Basis set label:O.AUG-CC-PVTZ.KENDALL.11S6P3D2F.5S4P3D2F......                                  
+
+ Valence basis set:
+ ==================
+ Associated Effective Charge  8.000000 au
+ Associated Actual Charge     8.000000 au
+ Nuclear Model: Point charge
+
+
+  Shell  nPrim  nBasis  Cartesian Spherical Contaminant
+    s      11       5        X                  
+    p       6       4        X                  
+    d       3       3        X                  
+    f       2       2        X                  
+
+                    ************************************************ 
+                    **** Cartesian Coordinates / Bohr, Angstrom **** 
+                    ************************************************ 
+
+     Center  Label                x              y              z                     x              y              z
+        1      C01            4.726178      -1.385794       0.710253              2.500986      -0.733331       0.375850
+        2      C02            3.085791       0.732532      -0.212270              1.632930       0.387639      -0.112328
+        3      O03            3.613935       2.951906      -0.130288              1.912412       1.562081      -0.068945
+        4      H04            6.489324      -0.566403       1.361573              3.434002      -0.299727       0.720513
+        5      H05            3.803291      -2.389677       2.247117              2.012615      -1.264563       1.189123
+        6      H06            5.077346      -2.730800      -0.802802              2.686816      -1.445077      -0.424824
+        7      O07            0.753578       0.173810      -1.316191              0.398776       0.091976      -0.696498
+        8      O08            0.262472      -2.574128      -1.169469              0.138894      -1.362170      -0.618856
+        9      H09           -1.416725      -2.511502      -0.551260             -0.749699      -1.329030      -0.291714
+       10      O10           -5.734439      -0.610131       0.937675             -3.034534      -0.322867       0.496196
+       11      O11           -6.382978       1.563563       0.539876             -3.377726       0.827402       0.285690
+
+                    *************************************** 
+                    *    InterNuclear Distances / Bohr    * 
+                    *************************************** 
+
+             1 C01           2 C02           3 O03           4 H04           5 H05           6 H06 
+    1 C01    0.000000
+    2 C02    2.833588        0.000000
+    3 O03    4.556230        2.282823        0.000000
+    4 H04    2.050440        3.968406        4.782469        0.000000
+    5 H05    2.054617        4.038760        5.849822        3.365010        0.000000
+    6 H06    2.054676        4.038526        5.906522        3.370877        3.322888        0.000000
+    7 O07    4.724446        2.640081        4.160028        6.373156        5.345033        5.234052
+    8 O08    4.986999        4.452118        6.545934        7.015042        4.923868        4.831356
+    9 H09    6.371334        5.559795        7.438655        8.363489        5.924046        6.502640
+   10 O10   10.491800        8.995641       10.060852       12.231189        9.790287       11.154425
+   11 O11   11.495263        9.534879       10.115082       13.073182       11.059062       12.311920
+
+             7 O07           8 O08           9 H09          10 O10          11 O11 
+    7 O07    0.000000
+    8 O08    2.795330        0.000000
+    9 H09    3.536415        1.790477        0.000000
+   10 O10    6.912947        6.652840        4.947201        0.000000
+   11 O11    7.503788        8.012762        6.516165        2.302996        0.000000
+
+                    ******************************************* 
+                    *    InterNuclear Distances / Angstrom    * 
+                    ******************************************* 
+
+             1 C01           2 C02           3 O03           4 H04           5 H05           6 H06 
+    1 C01    0.000000
+    2 C02    1.499470        0.000000
+    3 O03    2.411053        1.208018        0.000000
+    4 H04    1.085046        2.099990        2.530773        0.000000
+    5 H05    1.087257        2.137219        3.095593        1.780686        0.000000
+    6 H06    1.087288        2.137096        3.125597        1.783791        1.758397        0.000000
+    7 O07    2.500069        1.397071        2.201392        3.372529        2.828470        2.769741
+    8 O08    2.639006        2.355959        3.463959        3.712200        2.605599        2.556644
+    9 H09    3.371565        2.942117        3.936367        4.425768        3.134870        3.441049
+   10 O10    5.552022        4.760288        5.323974        6.472466        5.180797        5.902668
+   11 O11    6.083031        5.045640        5.352671        6.918030        5.852204        6.515187
+
+             7 O07           8 O08           9 H09          10 O10          11 O11 
+    7 O07    0.000000
+    8 O08    1.479225        0.000000
+    9 H09    1.871390        0.947480        0.000000
+   10 O10    3.658174        3.520531        2.617946        0.000000
+   11 O11    3.970833        4.240171        3.448206        1.218693        0.000000
+
+                    ************************************** 
+                    *    Valence Bond Angles / Degree    * 
+                    ************************************** 
+                          Atom centers          Phi       
+                      2 C02    1 C01    4 H04    107.61
+                      2 C02    1 C01    5 H05    110.41
+                      2 C02    1 C01    6 H06    110.40
+                      4 H04    1 C01    5 H05    110.11
+                      4 H04    1 C01    6 H06    110.40
+                      5 H05    1 C01    6 H06    107.92
+                      1 C01    2 C02    3 O03    125.53
+                      1 C01    2 C02    7 O07    119.30
+                      3 O03    2 C02    7 O07    115.16
+                      2 C02    7 O07    8 O08    109.96
+                      7 O07    8 O08    9 H09     98.54
+
+           ***************************************************************
+           *              Valence Dihedral Angles / Degree               *
+           ***************************************************************
+                    Atom centers                Phi1     Phi2     Theta 
+           4 H04    1 C01    2 C02    7 O07     107.61   119.30  -175.78
+           5 H05    1 C01    2 C02    7 O07     110.41   119.30    64.02
+           6 H06    1 C01    2 C02    7 O07     110.40   119.30   -55.24
+           3 O03    2 C02    1 C01    4 H04     125.53   107.61     2.94
+           3 O03    2 C02    1 C01    5 H05     125.53   110.41  -117.26
+           3 O03    2 C02    1 C01    6 H06     125.53   110.40   123.48
+           1 C01    2 C02    7 O07    8 O08     119.30   109.96    -4.43
+           3 O03    2 C02    7 O07    8 O08     115.16   109.96   176.72
+           2 C02    7 O07    8 O08    9 H09     109.96    98.54  -132.34
+
+  Basis set specifications :
+  Symmetry species            a  
+  Basis functions             485
+
+
+            Nuclear Potential Energy            280.59207043 au
+
+ QLdiag: ran out of iterations
+ NIdiag: backup call to Jacob!
+
+  Molden_Interface: W A R N I N G !!!!
+
+  Calculation contains more than                     100 basis functions!
+  Since the Molden files are verbose no file will be printed.
+  To override type "> export MOLCAS_MOLDEN=ON" in the top of the input file!
+
+FORTRAN STOP
+real 20412.04
+user 4230.83
+sys 1140.89
+--- Stop Module: seward at Fri Feb 12 06:18:03 2010 /rc=0 ---
+--- Stop Module: seward at Fri Feb 12 06:18:03 2010 /rc=0 ---
+total 72582836
+-rw-r--r--  1 user grupo     4321492 Feb 12 06:18 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.GssOrb
+-rw-r--r--  1 user grupo          40 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.NqGrid
+-rw-r--r--  1 user grupo    16892696 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OneInt
+-rw-r--r--  1 user grupo    19539752 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OneRel
+-rw-r--r--  1 user grupo 20971520000 Feb 12 06:17 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt
+-rw-r--r--  1 user grupo 20971520000 Feb 12 06:17 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt1
+-rw-r--r--  1 user grupo 20971520000 Feb 12 06:17 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt2
+-rw-r--r--  1 user grupo 11293722624 Feb 12 04:25 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt3
+-rw-r--r--  1 user grupo     3090440 Feb 12 06:18 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RunFile
+-rw-r--r--  1 user grupo        2147 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Seward.Input
+-rw-r--r--  1 user grupo       21926 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.SymInfo
+-rw-r--r--  1 user grupo           2 Feb 12 06:18 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.returncode
+-rw-r--r--  1 user grupo          30 Feb 12 06:18 extract.xml
+-rw-r--r--  1 user grupo         530 Feb 12 00:37 molcas.env
+-rw-r--r--  1 user grupo         944 Feb 12 00:37 molcas_info
+-rw-r--r--  1 user grupo           2 Feb 12 06:18 returncode
+-rw-r--r--  1 user grupo        2147 Feb 12 00:37 stdin
+>>> LINK -FORCE /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.McOrb INPORB
+
+>>> LINK -FORCE /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RasOrb RASORB
+
+*** Warning: real file does not exist: /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RasOrb
+--- Start Module: rasscf at Fri Feb 12 06:18:48 2010 
+
+
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+                                  MOLCAS executing module RASSCF with 4000 MB of memory                                 
+                                              at 06:18:48 Fri Feb 12 2010                                               
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+
+
+      Header of the ONEINT file:
+      --------------------------
+      CX5 [CH3C(O)OOH...O2] TRIPLET, CAS(16,14)/aug-cc-pVDZ OPT. GEO.                                                         
+      Integrals generated by seward 4.2.0  , Fri Feb 12 00:37:51 2010                                                         
+
+
+      OrdInt status: non-squared
+
+
+      Cartesian coordinates in Angstrom:
+      -----------------------------------------
+      No.  Label     X         Y         Z     
+      -----------------------------------------
+       1   C01      2.50099  -0.73333   0.37585
+       2   C02      1.63293   0.38764  -0.11233
+       3   O03      1.91241   1.56208  -0.06895
+       4   H04      3.43400  -0.29973   0.72051
+       5   H05      2.01261  -1.26456   1.18912
+       6   H06      2.68682  -1.44508  -0.42482
+       7   O07      0.39878   0.09198  -0.69650
+       8   O08      0.13889  -1.36217  -0.61886
+       9   H09     -0.74970  -1.32903  -0.29171
+      10   O10     -3.03453  -0.32287   0.49620
+      11   O11     -3.37773   0.82740   0.28569
+      -----------------------------------------
+      Nuclear repulsion energy =  280.592070
+
+
+
+      Wave function specifications:
+      -----------------------------
+
+      Number of frozen shell electrons          14
+      Number of closed shell electrons          26
+      Number of electrons in active shells      16
+      Max number of holes in RAS1 space          0
+      Max nr of electrons in RAS3 space          0
+      Number of frozen orbitals                  7
+      Number of inactive orbitals               13
+      Number of active orbitals                 14
+      Number of secondary orbitals             451
+      Spin quantum number                      1.0
+      State symmetry                             1
+
+
+      Orbital specifications:
+      -----------------------
+
+      Symmetry species                           1
+                                                 a
+      Frozen orbitals                            7
+      Inactive orbitals                         13
+      Active orbitals                           14
+      RAS1 orbitals                              0
+      RAS2 orbitals                             14
+      RAS3 orbitals                              0
+      Secondary orbitals                       451
+      Deleted orbitals                           0
+      Number of basis functions                485
+
+
+      CI expansion specifications:
+      ----------------------------
+
+      Number of configuration state fnc.   3864861
+      Number of determinants               6870864
+      Number of root(s) required                 1
+      Root chosen for geometry opt.              1
+      CI root used                               1
+      highest root included in the CI            1
+      max. size of the explicit Hamiltonian    100
+
+
+      Optimization specifications:
+      ----------------------------
+
+      RASSCF algorithm: Conventional
+      Maximum number of macro iterations       200
+      Maximum number of SX iterations          100
+      Threshold for RASSCF energy            0.100E-07
+      Threshold for max MO rotation          0.100E-03
+      Threshold for max BLB element          0.100E-03
+      Level shift parameter                  0.500E+00
+      Make Quasi-Newton update
+      The MO-coefficients are taken from the file:
+      INPORB                                                                                                                          
+      Title: GAMESS MCSCF orbitals                                                         
+
+      Total molecular charge    0.00
+
+      ************************************************************************************************************************
+      *                                                                                                                      *
+      *                                            Wave function  control section                                            *
+      *                                                                                                                      *
+      ************************************************************************************************************************
+
+
+                          RASSCF iterations: Energy and convergence statistics
+                          ----------------------------------------------------
+
+      Iter CI   SX   CI       RASSCF       Energy    max BLB   max BLB  max ROT   Level Ln srch  Step   QN    Time(min)
+          iter iter root      energy       change    element    value    param    shift minimum  type update     CPU
+        1   1   20    1  -452.57307503    0.00E+00   26 232 1  0.45E-03*  0.42E-03*  0.27   0.00     SX     NO     70.84
+        2   1   15    1  -452.57307792   -0.29E-05*  10 187 1 -0.11E-03*  0.18E-03*  0.27   0.00     SX     NO     29.50
+        3   1   12    1  -452.57307817   -0.26E-06*  26 484 1 -0.43E-04  -0.11E-03*  0.27   0.00     SX     NO     29.92
+        4   7   13    1  -452.57308388   -0.57E-05*  11  33 1  0.79E-04  -0.19E-03*  0.27   0.00     SX     NO     44.41
+        5   3   12    1  -452.57308402   -0.14E-06*  14 243 1 -0.40E-04   0.33E-03*  0.27   1.77     QN    YES     34.15
+        6   4   11    1  -452.57308409   -0.75E-07*  14 243 1  0.45E-04   0.91E-04   0.27   0.80     QN    YES     37.24
+        7   3   10    1  -452.57308411   -0.19E-07*  14 243 1 -0.18E-04   0.24E-03*  0.27   1.33     QN    YES     34.50
+        8   2    8    1  -452.57308413   -0.15E-07*  14 243 1 -0.18E-04   0.41E-03*  0.27   1.93     QN    YES     31.83
+        9   3    9    1  -452.57308414   -0.14E-07*  12  32 1 -0.11E-04   0.39E-03*  0.27   1.50     QN    YES     34.68
+       10   3    8    1  -452.57308415   -0.71E-08   11  30 1  0.13E-04  -0.16E-03*  0.27   1.28     QN    YES     34.31
+       11   1    6    1  -452.57308415   -0.20E-08   11  30 1  0.78E-05   0.33E-04   0.27   1.24     QN    YES     29.22
+      Convergence after 11 iterations
+       12   1    6    1  -452.57308415   -0.87E-09   14 243 1  0.24E-05   0.33E-04   0.27   1.24     QN    YES     35.40
+
+      ************************************************************************************************************************
+                                                      Wave function printout:
+                       occupation of active orbitals, and spin coupling of open shells (u,d: Spin up or down)
+      ************************************************************************************************************************
+
+      Note: transformation to natural orbitals
+      has been made, which may change the order of the CSFs.
+
+      printout of CI-coefficients larger than  0.05 for root  1
+      energy=    -452.573084
+      conf/sym  11111111111111     Coeff  Weight
+             1  2222222uu00000   0.92872 0.86252
+          1053  2222220uu20000  -0.17959 0.03225
+          2533  2222202uu02000  -0.13330 0.01777
+          3820  2222022uu00200  -0.08316 0.00692
+          4006  222ud222u00u00  -0.06634 0.00440
+          4217  22u2d22u200u00   0.06573 0.00432
+         11842  222uu222u00d00   0.07610 0.00579
+         12284  22u2u22u200d00  -0.07620 0.00581
+         13546  22uu2222200000   0.15321 0.02347
+
+      Natural orbitals and occupation numbers for root  1
+      sym 1:   1.980629   1.975814   1.960550   1.960515   1.958720   1.947404   1.923451   1.038812   1.038787   0.077017
+               0.052535   0.042616   0.024614   0.018538
+
+      ************************************************************************************************************************
+      *                                                                                                                      *
+      *                                                    Final results                                                    *
+      *                                                                                                                      *
+      ************************************************************************************************************************
+
+
+      Wave function specifications:
+      -----------------------------
+
+      Number of closed shell electrons          26
+      Number of electrons in active shells      16
+      Max number of holes in RAS1 space          0
+      Max nr of electrons in RAS3 space          0
+      Number of inactive orbitals               13
+      Number of active orbitals                 14
+      Number of secondary orbitals             451
+      Spin quantum number                      1.0
+      State symmetry                             1
+
+
+      Orbital specifications:
+      -----------------------
+
+      Symmetry species                           1
+                                                 a
+      Frozen orbitals                            7
+      Inactive orbitals                         13
+      Active orbitals                           14
+      RAS1 orbitals                              0
+      RAS2 orbitals                             14
+      RAS3 orbitals                              0
+      Secondary orbitals                       451
+      Deleted orbitals                           0
+      Number of basis functions                485
+
+
+      CI expansion specifications:
+      ----------------------------
+
+      Number of configuration state fnc.   3864861
+      Number of determinants               6870864
+      Number of root(s) required                 1
+      CI root used                               1
+      highest root included in the CI            1
+      Root passed to geometry opt.               1
+
+
+      Final optimization conditions:
+      ------------------------------
+
+      Average CI energy                            -452.57308415
+      RASSCF energy for state  1                   -452.57308415
+      Super-CI energy                                 0.00000000
+      RASSCF energy change                            0.00000000
+      Max change in MO coefficients              -0.156E-03
+      Max non-diagonal density matrix element     0.330E-04
+      Maximum BLB matrix element                  0.244E-05
+      (orbital pair  14, 243 in symmetry   1)
+      Norm of electronic gradient            0.168E-04
+
+
+      Final state energy(ies):
+      ------------------------
+
+      root number  1 E =       -452.57308415 a.u.
+
+
+      Molecular orbitals:
+      -------------------
+
+      Pseudonatural active orbitals and approximate occupation numbers
+
+
+      MOLECULAR ORBITALS FOR SYMMETRY SPECIES 1: a  
+
+      INDEX  ENERGY  OCCUPATION COEFFICIENTS ...
+          1    0.0000    2.0000                                                                                                           
+               376 O10 1s  ( 0.2393)   431 O11 1s  ( 0.9659)                                                                              
+          2    0.0000    2.0000                                                                                                           
+               376 O10 1s  ( 0.9659)   431 O11 1s  (-0.2387)                                                                              
+          3    0.0000    2.0000                                                                                                           
+               241 O07 1s  ( 0.9948)                                                                                                      
+          4    0.0000    2.0000                                                                                                           
+               296 O08 1s  ( 0.9950)                                                                                                      
+          5    0.0000    2.0000                                                                                                           
+               111 O03 1s  ( 0.9956)                                                                                                      
+          6    0.0000    2.0000                                                                                                           
+                56 C02 1s  ( 0.9997)                                                                                                      
+          7    0.0000    2.0000                                                                                                           
+                 1 C01 1s  ( 0.9998)                                                                                                      
+          8   -1.4778    2.0000                                                                                                           
+               377 O10 2s  ( 0.6591)   432 O11 2s  ( 0.6569)                                                                              
+          9   -1.4003    2.0000                                                                                                           
+               242 O07 2s  ( 0.3706)   246 O07 2px (-0.1129)   297 O08 2s  ( 0.7944)   351 H09 1s  ( 0.3859)                              
+               353 H09 *s  (-0.1490)                                                                                                      
+         10   -1.1712    2.0000                                                                                                           
+                 2 C01 2s  ( 0.1786)    57 C02 2s  ( 0.1627)   112 O03 2s  ( 0.8091)   115 O03 *s  ( 0.1178)                              
+               120 O03 2py ( 0.2336)   242 O07 2s  ( 0.2524)   297 O08 2s  (-0.1680)   351 H09 1s  (-0.1018)                              
+                                                                                                                                          
+         11   -1.1163    2.0000                                                                                                           
+                 4 C01 *s  ( 0.1022)   112 O03 2s  (-0.3260)   242 O07 2s  ( 0.7727)   246 O07 2px (-0.2315)                              
+               250 O07 2py ( 0.1580)   254 O07 2pz (-0.1568)   297 O08 2s  (-0.3629)   351 H09 1s  (-0.2349)                              
+                                                                                                                                          
+         12   -1.1052    2.0000                                                                                                           
+               377 O10 2s  (-0.6911)   385 O10 2py ( 0.1933)   432 O11 2s  ( 0.6990)   440 O11 2py ( 0.1932)                              
+                                                                                                                                          
+         13   -1.0218    2.0000                                                                                                           
+                 2 C01 2s  ( 0.7117)     4 C01 *s  (-0.2316)    57 C02 2s  ( 0.2840)    61 C02 2px ( 0.1507)                              
+                65 C02 2py (-0.2165)   112 O03 2s  (-0.2422)   166 H04 1s  ( 0.2885)   191 H05 1s  ( 0.2961)                              
+               193 H05 *s  (-0.1029)   216 H06 1s  ( 0.2955)   218 H06 *s  (-0.1001)   242 O07 2s  (-0.1140)                              
+                                                                                                                                          
+         14   -0.7246    2.0000                                                                                                           
+                 6 C01 2px (-0.1031)    14 C01 2pz (-0.1084)   166 H04 1s  (-0.1573)   191 H05 1s  (-0.1040)                              
+               246 O07 2px ( 0.1819)   254 O07 2pz (-0.2846)   297 O08 2s  ( 0.2513)   299 O08 *s  ( 0.1051)                              
+               301 O08 2px ( 0.6193)   305 O08 2py (-0.1757)   309 O08 2pz (-0.2929)   351 H09 1s  (-0.5470)                              
+               353 H09 *s  ( 0.1390)                                                                                                      
+         15   -0.6952    2.0000                                                                                                           
+                 2 C01 2s  (-0.1979)     4 C01 *s  (-0.1789)     6 C01 2px (-0.2801)    10 C01 2py ( 0.4479)                              
+                12 C01 *py (-0.1191)    14 C01 2pz (-0.1471)    57 C02 2s  ( 0.4299)    61 C02 2px ( 0.2543)                              
+                65 C02 2py (-0.2939)    69 C02 2pz ( 0.1584)   112 O03 2s  (-0.1185)   116 O03 2px ( 0.2185)                              
+               120 O03 2py (-0.1128)   124 O03 2pz ( 0.1065)   166 H04 1s  (-0.2233)   167 H04 *s  ( 0.1155)                              
+               191 H05 1s  (-0.3119)   192 H05 *s  ( 0.1215)   216 H06 1s  (-0.3448)   217 H06 *s  ( 0.1337)                              
+               218 H06 *s  ( 0.1062)   301 O08 2px (-0.1104)   309 O08 2pz ( 0.1159)   351 H09 1s  ( 0.1136)                              
+                                                                                                                                          
+         16   -0.6366    2.0000                                                                                                           
+                 6 C01 2px (-0.3019)     8 C01 *px ( 0.1430)    10 C01 2py (-0.1609)   166 H04 1s  (-0.3241)                              
+               191 H05 1s  ( 0.2925)   246 O07 2px (-0.2155)   254 O07 2pz ( 0.4148)   301 O08 2px ( 0.3854)                              
+               309 O08 2pz ( 0.4593)   351 H09 1s  (-0.1869)                                                                              
+         17   -0.5953    2.0000                                                                                                           
+                 6 C01 2px (-0.2000)    10 C01 2py (-0.2651)    14 C01 2pz (-0.5338)   116 O03 2px (-0.1869)                              
+               166 H04 1s  (-0.4788)   167 H04 *s  ( 0.1154)   168 H04 *s  ( 0.2279)   191 H05 1s  (-0.1983)                              
+               216 H06 1s  ( 0.5701)   217 H06 *s  (-0.1271)   218 H06 *s  (-0.1927)   254 O07 2pz (-0.1475)                              
+               301 O08 2px (-0.2018)   351 H09 1s  ( 0.1874)                                                                              
+         18   -0.5791    2.0000                                                                                                           
+                 6 C01 2px (-0.4572)    10 C01 2py (-0.1108)    14 C01 2pz ( 0.3406)   116 O03 2px (-0.1117)                              
+               166 H04 1s  (-0.3520)   168 H04 *s  ( 0.2681)   191 H05 1s  ( 0.5598)   192 H05 *s  (-0.1245)                              
+               193 H05 *s  (-0.1939)   216 H06 1s  (-0.2801)   218 H06 *s  ( 0.1052)   246 O07 2px ( 0.1402)                              
+               254 O07 2pz (-0.2745)   301 O08 2px (-0.2695)   309 O08 2pz (-0.2924)   351 H09 1s  ( 0.1338)                              
+                                                                                                                                          
+         19   -0.5172    2.0000                                                                                                           
+                 4 C01 *s  ( 0.1026)     8 C01 *px ( 0.1008)    10 C01 2py ( 0.1098)    14 C01 2pz ( 0.1171)                              
+                69 C02 2pz (-0.1152)   116 O03 2px (-0.1254)   166 H04 1s  ( 0.1518)   168 H04 *s  (-0.2785)                              
+               216 H06 1s  (-0.1675)   246 O07 2px ( 0.3037)   254 O07 2pz (-0.5648)   309 O08 2pz ( 0.7062)                              
+               351 H09 1s  ( 0.1489)                                                                                                      
+         20   -0.5095    2.0000                                                                                                           
+                 4 C01 *s  ( 0.1536)    10 C01 2py (-0.3345)    57 C02 2s  (-0.1577)    65 C02 2py ( 0.1304)                              
+               116 O03 2px ( 0.7067)   120 O03 2py (-0.2523)   124 O03 2pz ( 0.3550)   166 H04 1s  (-0.1956)                              
+               191 H05 1s  ( 0.1996)   216 H06 1s  ( 0.1864)   242 O07 2s  ( 0.1119)   254 O07 2pz (-0.1201)                              
+               309 O08 2pz ( 0.1300)                                                                                                      
+         21    0.0000    1.9806                                                                                                           
+                 4 C01 *s  (-0.2322)     8 C01 *px ( 0.1013)    10 C01 2py ( 0.1063)    57 C02 2s  (-0.5436)                              
+                59 C02 *s  ( 0.3754)    61 C02 2px ( 0.1793)    65 C02 2py (-0.4482)    67 C02 *py ( 0.1164)                              
+                69 C02 2pz ( 0.1157)   112 O03 2s  (-0.1148)   114 O03 *s  ( 0.1590)   116 O03 2px ( 0.1482)                              
+               120 O03 2py ( 0.5926)   122 O03 *py (-0.1282)   246 O07 2px (-0.3448)   254 O07 2pz (-0.1877)                              
+                                                                                                                                          
+         22    0.0000    1.9758                                                                                                           
+                59 C02 *s  ( 0.1426)    61 C02 2px (-0.4218)    63 C02 *px ( 0.1630)    65 C02 2py (-0.3991)                              
+                67 C02 *py ( 0.1358)    69 C02 2pz (-0.1645)   112 O03 2s  (-0.1024)   116 O03 2px ( 0.2084)                              
+               120 O03 2py ( 0.4031)   242 O07 2s  ( 0.2340)   246 O07 2px ( 0.5670)   254 O07 2pz ( 0.3206)                              
+                                                                                                                                          
+         23    0.0000    1.9606                                                                                                           
+               381 O10 2px ( 0.5618)   389 O10 2pz (-0.3711)   436 O11 2px ( 0.5178)   440 O11 2py ( 0.1408)                              
+               444 O11 2pz (-0.3789)                                                                                                      
+         24    0.0000    1.9605                                                                                                           
+               381 O10 2px ( 0.3430)   385 O10 2py ( 0.1978)   389 O10 2pz ( 0.5431)   436 O11 2px ( 0.3343)                              
+               440 O11 2py ( 0.2015)   444 O11 2pz ( 0.5327)                                                                              
+         25    0.0000    1.9587                                                                                                           
+               381 O10 2px (-0.1611)   385 O10 2py ( 0.6805)   389 O10 2pz (-0.1468)   434 O11 *s  (-0.1045)                              
+               436 O11 2px ( 0.2441)   440 O11 2py (-0.6651)   442 O11 *py ( 0.1104)                                                      
+         26    0.0000    1.9474                                                                                                           
+                61 C02 2px (-0.2245)    69 C02 2pz ( 0.4772)   116 O03 2px (-0.3252)   124 O03 2pz ( 0.6945)                              
+               254 O07 2pz (-0.1091)                                                                                                      
+         27    0.0000    1.9235                                                                                                           
+               250 O07 2py ( 0.6596)   305 O08 2py (-0.6435)                                                                              
+         28    0.0000    1.0388                                                                                                           
+               381 O10 2px (-0.4076)   385 O10 2py (-0.2373)   389 O10 2pz (-0.6285)   436 O11 2px ( 0.4168)                              
+               440 O11 2py ( 0.2423)   444 O11 2pz ( 0.6407)                                                                              
+         29    0.0000    1.0388                                                                                                           
+               381 O10 2px (-0.6280)   385 O10 2py (-0.1102)   389 O10 2pz ( 0.4504)   436 O11 2px ( 0.6487)                              
+               440 O11 2py ( 0.1132)   444 O11 2pz (-0.4636)                                                                              
+         30    0.0000    0.0770                                                                                                           
+                 4 C01 *s  ( 0.1826)     8 C01 *px ( 0.1950)    67 C02 *py (-0.1381)   168 H04 *s  (-0.2816)                              
+               193 H05 *s  (-0.1028)   218 H06 *s  (-0.1317)   242 O07 2s  (-0.2946)   244 O07 *s  (-0.2266)                              
+               245 O07 *s  (-0.1059)   250 O07 2py ( 0.9519)   297 O08 2s  ( 0.2487)   299 O08 *s  ( 0.2547)                              
+               300 O08 *s  ( 0.1383)   301 O08 2px ( 0.1529)   305 O08 2py ( 0.8794)                                                      
+         31    0.0000    0.0525                                                                                                           
+                 4 C01 *s  (-0.1558)    16 C01 *pz (-0.1875)    61 C02 2px ( 0.4205)    69 C02 2pz (-0.8599)                              
+               116 O03 2px (-0.4458)   124 O03 2pz ( 0.9417)   126 O03 *pz (-0.2183)   168 H04 *s  ( 0.1161)                              
+               191 H05 1s  ( 0.1191)   193 H05 *s  ( 0.2603)   216 H06 1s  (-0.1119)   218 H06 *s  (-0.2220)                              
+               254 O07 2pz ( 0.2131)                                                                                                      
+         32    0.0000    0.0426                                                                                                           
+               168 H04 *s  ( 0.1287)   377 O10 2s  ( 0.4603)   379 O10 *s  ( 0.7439)   380 O10 *s  ( 0.3074)                              
+               381 O10 2px (-0.2973)   385 O10 2py ( 1.0040)   387 O10 *py ( 0.2055)   389 O10 2pz (-0.1847)                              
+               432 O11 2s  (-0.4579)   434 O11 *s  (-0.7472)   435 O11 *s  (-0.3118)   436 O11 2px (-0.3020)                              
+               440 O11 2py ( 1.0081)   442 O11 *py ( 0.1917)   444 O11 2pz (-0.1838)                                                      
+         33    0.0000    0.0246                                                                                                           
+                 4 C01 *s  ( 1.3961)     5 C01 *s  (-0.3818)     6 C01 2px ( 0.1122)     7 C01 *px (-0.1448)                              
+                 8 C01 *px ( 0.5135)    10 C01 2py (-0.1153)    11 C01 *py ( 0.1221)    12 C01 *py (-0.2545)                              
+                16 C01 *pz ( 0.2318)    23 C01 *110( 0.1199)    29 C01 *020( 0.1248)    57 C02 2s  ( 0.9290)                              
+                59 C02 *s  ( 0.7129)    60 C02 *s  ( 0.6342)    61 C02 2px (-0.5018)    62 C02 *px (-0.2499)                              
+                65 C02 2py ( 0.4090)    66 C02 *py ( 0.1763)    67 C02 *py (-0.4208)    69 C02 2pz (-0.2899)                              
+                70 C02 *pz (-0.1278)    77 C02 *110( 0.1850)   112 O03 2s  (-0.3593)   115 O03 *s  (-0.3202)                              
+               116 O03 2px ( 0.3027)   120 O03 2py ( 0.6829)   122 O03 *py (-0.2120)   124 O03 2pz ( 0.1149)                              
+               167 H04 *s  (-0.1390)   168 H04 *s  (-0.7762)   172 H04 *px ( 0.1451)   193 H05 *s  (-0.4790)                              
+               203 H05 *pz ( 0.1033)   218 H06 *s  (-0.5599)   228 H06 *pz (-0.1031)   242 O07 2s  (-0.4207)                              
+               244 O07 *s  (-0.2966)   245 O07 *s  (-0.3926)   246 O07 2px (-0.8399)   250 O07 2py (-0.1816)                              
+               254 O07 2pz (-0.4290)   300 O08 *s  ( 0.1365)                                                                              
+         34    0.0000    0.0185                                                                                                           
+                 4 C01 *s  (-0.4599)     7 C01 *px (-0.1000)     8 C01 *px ( 0.1421)    12 C01 *py (-0.3230)                              
+                57 C02 2s  ( 0.3268)    59 C02 *s  (-0.2462)    61 C02 2px ( 0.6900)    62 C02 *px ( 0.3242)                              
+                63 C02 *px ( 0.1016)    65 C02 2py ( 1.0567)    66 C02 *py ( 0.4527)    67 C02 *py (-0.4347)                              
+                69 C02 2pz ( 0.2594)    70 C02 *pz ( 0.1234)    74 C02 *200(-0.1864)    78 C02 *110(-0.1617)                              
+                80 C02 *101(-0.1734)    83 C02 *020( 0.1801)    84 C02 *020(-0.1923)   112 O03 2s  (-0.4665)                              
+               114 O03 *s  (-0.4750)   116 O03 2px ( 0.2273)   118 O03 *px (-0.1770)   120 O03 2py ( 0.9643)                              
+               122 O03 *py (-0.1818)   145 O03 *002( 0.1043)   167 H04 *s  ( 0.3426)   168 H04 *s  (-0.2817)                              
+               192 H05 *s  ( 0.1367)   217 H06 *s  ( 0.1098)   242 O07 2s  ( 0.2925)   244 O07 *s  ( 0.5321)                              
+               245 O07 *s  ( 0.1598)   246 O07 2px ( 0.6161)   248 O07 *px ( 0.1815)   252 O07 *py ( 0.1270)                              
+               254 O07 2pz ( 0.3376)                                                                                                      
+         35    0.0280    0.0000                                                                                                           
+                 4 C01 *s  (10.8849)     5 C01 *s  (-6.4236)     8 C01 *px ( 0.1765)     9 C01 *px ( 0.3843)                              
+                12 C01 *py ( 0.2668)    13 C01 *py ( 0.3364)    16 C01 *pz (-0.4793)    17 C01 *pz (-0.1255)                              
+                20 C01 *200( 1.5040)    23 C01 *110( 0.2189)    26 C01 *101( 0.1553)    29 C01 *020( 1.7317)                              
+                35 C01 *002( 1.4714)    59 C02 *s  (-4.9695)    60 C02 *s  (-1.7002)    62 C02 *px ( 0.1020)                              
+                63 C02 *px (-0.9202)    64 C02 *px ( 0.1862)    66 C02 *py (-0.3342)    67 C02 *py ( 0.5806)                              
+                68 C02 *py ( 0.3447)    71 C02 *pz (-0.3803)    75 C02 *200(-0.5350)    81 C02 *101(-0.2400)                              
+                84 C02 *020(-0.6278)    90 C02 *002(-0.2768)   108 C02 *012(-0.1004)   114 O03 *s  ( 0.8354)                              
+               115 O03 *s  ( 1.7376)   118 O03 *px (-0.1550)   119 O03 *px (-0.1019)   122 O03 *py (-0.6231)                              
+               123 O03 *py (-0.5141)   139 O03 *020( 0.1586)   167 H04 *s  ( 0.2638)   168 H04 *s  (-3.8916)                              
+               169 H04 *s  ( 0.3094)   172 H04 *px ( 0.7256)   175 H04 *py ( 0.1861)   178 H04 *pz ( 0.2630)                              
+               192 H05 *s  ( 0.3041)   193 H05 *s  (-2.9498)   194 H05 *s  ( 2.1663)   197 H05 *px (-0.2708)                              
+               200 H05 *py (-0.2042)   203 H05 *pz ( 0.6452)   217 H06 *s  ( 0.3277)   218 H06 *s  (-3.8245)                              
+               219 H06 *s  ( 1.1118)   222 H06 *px ( 0.3437)   225 H06 *py (-0.4932)   228 H06 *pz (-0.6883)                              
+               245 O07 *s  ( 1.1438)   249 O07 *px ( 0.4170)   252 O07 *py ( 0.2964)   253 O07 *py ( 0.1374)                              
+               257 O07 *pz ( 0.2923)   300 O08 *s  ( 0.4924)   303 O08 *px ( 0.1141)   304 O08 *px ( 0.4753)                              
+               307 O08 *py ( 0.1980)   308 O08 *py ( 0.4004)   353 H09 *s  ( 0.3311)   354 H09 *s  ( 0.9819)                              
+               384 O10 *px (-0.1111)   388 O10 *py ( 0.1156)   435 O11 *s  (-0.3448)                                                      
+         36    0.0413    0.0000                                                                                                           
+                 4 C01 *s  ( 7.1322)     5 C01 *s  (-1.5169)     7 C01 *px ( 0.1342)     8 C01 *px (-0.5613)                              
+                 9 C01 *px (-1.9142)    11 C01 *py ( 0.1143)    12 C01 *py (-0.7908)    13 C01 *py (-0.5609)                              
+                16 C01 *pz ( 0.7739)    17 C01 *pz (-0.4680)    20 C01 *200( 1.2494)    23 C01 *110( 0.1331)                              
+                26 C01 *101(-0.1050)    29 C01 *020( 0.8203)    35 C01 *002( 1.0113)    59 C02 *s  (-0.8086)                              
+                60 C02 *s  (-1.0371)    62 C02 *px ( 0.1523)    63 C02 *px (-0.3521)    64 C02 *px (-1.1584)                              
+                67 C02 *py ( 0.5048)    68 C02 *py (-0.1077)    71 C02 *pz (-0.3823)    72 C02 *pz (-0.3023)                              
+                81 C02 *101( 0.1095)    90 C02 *002(-0.1251)   114 O03 *s  (-0.1596)   115 O03 *s  ( 0.8731)                              
+               119 O03 *px ( 0.1159)   122 O03 *py ( 0.1097)   123 O03 *py (-0.2081)   168 H04 *s  (-2.5688)                              
+               169 H04 *s  ( 4.5808)   172 H04 *px ( 0.4359)   175 H04 *py ( 0.3073)   178 H04 *pz ( 0.2239)                              
+               192 H05 *s  ( 0.3682)   193 H05 *s  (-4.2291)   194 H05 *s  (-1.3156)   197 H05 *px (-0.1420)                              
+               200 H05 *py (-0.4356)   203 H05 *pz ( 0.6743)   217 H06 *s  ( 0.2436)   218 H06 *s  (-2.2313)                              
+               225 H06 *py (-0.2567)   228 H06 *pz (-0.2690)   244 O07 *s  ( 0.2477)   245 O07 *s  (-0.1502)                              
+               253 O07 *py (-0.3056)   304 O08 *px (-1.2436)   308 O08 *py (-0.3639)   311 O08 *pz (-0.1138)                              
+               352 H09 *s  ( 0.2533)   353 H09 *s  (-1.5854)   354 H09 *s  (-2.6335)   363 H09 *pz ( 0.1467)                              
+               384 O10 *px ( 0.1628)   388 O10 *py (-0.2757)   435 O11 *s  ( 0.7389)   443 O11 *py (-0.1102)                              
+                                                                                                                                          
+         37    0.0447    0.0000                                                                                                           
+                 4 C01 *s  ( 0.8610)     5 C01 *s  ( 0.3108)     7 C01 *px (-0.1940)     8 C01 *px ( 1.6871)                              
+                 9 C01 *px ( 0.6538)    12 C01 *py (-0.2684)    13 C01 *py (-0.2670)    15 C01 *pz ( 0.3639)                              
+                16 C01 *pz (-3.0332)    17 C01 *pz (-2.6978)    20 C01 *200( 0.2017)    26 C01 *101( 0.3177)                              
+                31 C01 *011(-0.1326)    32 C01 *011( 0.5145)    35 C01 *002( 0.1095)    51 C01 *021( 0.1155)                              
+                55 C01 *003( 0.1000)    59 C02 *s  ( 0.8461)    60 C02 *s  ( 0.4256)    64 C02 *px (-0.6649)                              
+                68 C02 *py (-0.2292)    71 C02 *pz ( 0.1686)    72 C02 *pz ( 0.3286)    75 C02 *200( 0.1272)                              
+                84 C02 *020( 0.1186)   114 O03 *s  (-0.1459)   115 O03 *s  (-0.2111)   122 O03 *py ( 0.1554)                              
+               123 O03 *py ( 0.1203)   168 H04 *s  (-1.3505)   169 H04 *s  ( 0.7930)   172 H04 *px ( 0.1230)                              
+               175 H04 *py ( 0.1803)   178 H04 *pz ( 0.2915)   192 H05 *s  (-0.2671)   193 H05 *s  ( 4.0296)                              
+               194 H05 *s  ( 5.4931)   197 H05 *px ( 0.3592)   200 H05 *py ( 0.5114)   203 H05 *pz (-0.6964)                              
+               217 H06 *s  ( 0.3026)   218 H06 *s  (-4.2866)   219 H06 *s  (-5.7917)   222 H06 *px ( 0.1989)                              
+               225 H06 *py (-0.7079)   228 H06 *pz (-0.5644)   245 O07 *s  (-0.1015)   249 O07 *px (-0.2123)                              
+               253 O07 *py (-0.2191)   257 O07 *pz (-0.2175)   299 O08 *s  ( 0.1615)   300 O08 *s  (-1.6030)                              
+               303 O08 *px (-0.1696)   304 O08 *px (-0.1285)   308 O08 *py (-0.5236)   312 O08 *pz (-0.3923)                              
+               352 H09 *s  (-0.2728)   353 H09 *s  ( 0.9080)   354 H09 *s  (-1.1022)   357 H09 *px ( 0.1710)                              
+               380 O10 *s  (-0.2407)   388 O10 *py (-0.2283)   434 O11 *s  ( 0.1297)   435 O11 *s  ( 0.5610)                              
+                                                                                                                                          
+         38    0.0570    0.0000                                                                                                           
+                 4 C01 *s  (-4.5252)     5 C01 *s  ( 8.5783)     7 C01 *px ( 0.2124)     8 C01 *px (-1.8168)                              
+                 9 C01 *px (-3.1463)    11 C01 *py ( 0.1625)    12 C01 *py (-1.1405)    13 C01 *py (-0.6909)                              
+                15 C01 *pz ( 0.1018)    16 C01 *pz (-0.9225)    17 C01 *pz (-1.0873)    20 C01 *200(-0.7092)                              
+                23 C01 *110( 0.1023)    26 C01 *101( 0.1429)    29 C01 *020(-0.4595)    35 C01 *002(-0.6299)                              
+                59 C02 *s  (-1.1388)    60 C02 *s  (-8.3262)    63 C02 *px ( 0.4518)    64 C02 *px (-0.1686)                              
+                67 C02 *py (-0.2305)    68 C02 *py ( 1.7466)    71 C02 *pz ( 0.3389)    72 C02 *pz (-0.4955)                              
+                78 C02 *110(-0.1119)    84 C02 *020(-0.3031)    87 C02 *011(-0.1168)   114 O03 *s  ( 0.2589)                              
+               115 O03 *s  ( 1.7546)   118 O03 *px (-0.1693)   119 O03 *px (-0.2221)   122 O03 *py (-0.1917)                              
+               123 O03 *py (-0.6837)   167 H04 *s  (-0.3300)   168 H04 *s  ( 3.6792)   169 H04 *s  ( 5.9614)                              
+               172 H04 *px (-0.7855)   175 H04 *py (-0.4689)   178 H04 *pz (-0.3629)   192 H05 *s  ( 0.1326)                              
+               194 H05 *s  (-3.6398)   197 H05 *px ( 0.1611)   200 H05 *py ( 0.4025)   203 H05 *pz ( 0.1163)                              
+               219 H06 *s  (-3.2731)   222 H06 *px ( 0.3406)   225 H06 *py ( 0.3854)   245 O07 *s  ( 0.7270)                              
+               248 O07 *px ( 0.2041)   249 O07 *px ( 0.3201)   257 O07 *pz ( 0.3591)   300 O08 *s  (-1.3861)                              
+               304 O08 *px ( 0.5520)   307 O08 *py ( 0.1149)   308 O08 *py ( 0.5373)   312 O08 *pz (-0.2205)                              
+               352 H09 *s  (-0.1085)   353 H09 *s  ( 1.3352)   354 H09 *s  ( 2.2697)   357 H09 *px ( 0.2435)                              
+               360 H09 *py (-0.1626)   363 H09 *pz (-0.1376)   379 O10 *s  ( 0.1382)   380 O10 *s  ( 0.5504)                              
+               384 O10 *px (-0.1691)   387 O10 *py ( 0.1263)   388 O10 *py ( 0.3386)   434 O11 *s  (-0.1942)                              
+               435 O11 *s  (-1.0219)   439 O11 *px (-0.1358)   442 O11 *py ( 0.1265)   443 O11 *py ( 0.2280)                              
+                                                                                                                                          
+         39    0.0704    0.0000                                                                                                           
+                 4 C01 *s  (*******)     5 C01 *s  (21.1290)     7 C01 *px (-0.2674)     8 C01 *px ( 2.0370)                              
+                 9 C01 *px (-2.2055)    11 C01 *py (-0.1503)    12 C01 *py ( 1.4518)    13 C01 *py ( 5.0092)                              
+                16 C01 *pz ( 0.6496)    17 C01 *pz (-1.6566)    20 C01 *200(-1.2704)    23 C01 *110( 0.2302)                              
+                26 C01 *101( 0.4281)    29 C01 *020(-1.1507)    35 C01 *002(-1.6235)    59 C02 *s  ( 2.6758)                              
+                60 C02 *s  (*******)    62 C02 *px (-0.1919)    63 C02 *px ( 1.2757)    64 C02 *px (-4.2893)                              
+                67 C02 *py (-1.8893)    68 C02 *py ( 4.9204)    71 C02 *pz ( 0.8338)    72 C02 *pz (-2.2323)                              
+                75 C02 *200( 0.6423)    78 C02 *110(-0.9780)    81 C02 *101(-0.1075)    84 C02 *020( 1.1313)                              
+                87 C02 *011(-0.5700)    90 C02 *002( 0.9224)   114 O03 *s  ( 0.4997)   115 O03 *s  ( 0.9524)                              
+               118 O03 *px ( 0.1205)   119 O03 *px ( 0.6754)   122 O03 *py (-0.4696)   123 O03 *py (-0.8271)                              
+               126 O03 *pz ( 0.1182)   127 O03 *pz ( 0.3528)   139 O03 *020( 0.1377)   168 H04 *s  (-0.2658)                              
+               169 H04 *s  (-2.5138)   172 H04 *px (-0.1561)   175 H04 *py (-0.2399)   193 H05 *s  ( 3.5693)                              
+               194 H05 *s  ( 3.2083)   197 H05 *px ( 0.2432)   200 H05 *py ( 0.5600)   203 H05 *pz (-0.6297)                              
+               218 H06 *s  ( 3.9992)   219 H06 *s  ( 2.4328)   222 H06 *px (-0.2457)   225 H06 *py ( 0.7258)                              
+               228 H06 *pz ( 0.6162)   244 O07 *s  ( 0.2734)   245 O07 *s  ( 2.4985)   248 O07 *px ( 0.2388)                              
+               249 O07 *px ( 0.1718)   253 O07 *py (-1.7031)   256 O07 *pz ( 0.1625)   257 O07 *pz ( 0.3938)                              
+               300 O08 *s  (-1.6001)   304 O08 *px (-0.4977)   308 O08 *py (-0.3299)   352 H09 *s  ( 0.1076)                              
+               353 H09 *s  (-0.5510)   354 H09 *s  (-1.9721)   360 H09 *py (-0.2284)   379 O10 *s  (-0.1052)                              
+               380 O10 *s  ( 1.3811)   384 O10 *px ( 0.1114)   388 O10 *py ( 0.2208)   434 O11 *s  ( 0.1311)                              
+               435 O11 *s  (-0.8852)   439 O11 *px (-0.2188)   443 O11 *py ( 0.3096)                                                      
+         40    0.0913    0.0000                                                                                                           
+                 4 C01 *s  ( 3.1136)     5 C01 *s  (-1.6940)     7 C01 *px (-0.2953)     8 C01 *px ( 3.2218)                              
+                 9 C01 *px ( 2.6059)    11 C01 *py ( 0.4564)    12 C01 *py (-4.5467)    13 C01 *py (-2.1561)                              
+                15 C01 *pz (-0.1274)    16 C01 *pz ( 1.3761)    17 C01 *pz ( 1.3320)    20 C01 *200( 0.4190)                              
+                23 C01 *110( 0.8721)    26 C01 *101(-0.3495)    29 C01 *020( 0.5186)    32 C01 *011( 0.3560)                              
+                35 C01 *002( 0.9213)    39 C01 *210( 0.1175)    43 C01 *120(-0.1051)    49 C01 *030( 0.1218)                              
+                53 C01 *012( 0.1779)    59 C02 *s  ( 6.2824)    60 C02 *s  ( 4.6548)    62 C02 *px (-0.1403)                              
+                63 C02 *px ( 1.0789)    64 C02 *px (-1.8153)    66 C02 *py ( 0.4743)    67 C02 *py (-2.8251)                              
+                68 C02 *py ( 1.4628)    70 C02 *pz (-0.1140)    71 C02 *pz ( 0.8220)    72 C02 *pz (-1.3928)                              
+                75 C02 *200( 0.3844)    78 C02 *110(-0.8122)    81 C02 *101( 0.4061)    84 C02 *020( 0.5368)                              
+                87 C02 *011(-0.5977)    90 C02 *002( 0.3703)   104 C02 *030( 0.1268)   114 O03 *s  (-0.3741)                              
+               115 O03 *s  (-0.5195)   118 O03 *px ( 0.1805)   119 O03 *px ( 0.6767)   121 O03 *py ( 0.1046)                              
+               123 O03 *py (-0.4054)   126 O03 *pz ( 0.1307)   127 O03 *pz ( 0.4694)   139 O03 *020( 0.1047)                              
+               145 O03 *002( 0.1068)   167 H04 *s  ( 0.4353)   168 H04 *s  (-3.7545)   169 H04 *s  (-0.7119)                              
+               172 H04 *px ( 0.6460)   175 H04 *py ( 0.3407)   178 H04 *pz ( 0.1690)   192 H05 *s  ( 0.4138)                              
+               193 H05 *s  (-4.0925)   197 H05 *px (-0.6058)   200 H05 *py (-0.2779)   203 H05 *pz ( 0.6296)                              
+               217 H06 *s  ( 0.4277)   218 H06 *s  (-4.5068)   219 H06 *s  (-1.1578)   222 H06 *px ( 0.2365)                              
+               225 H06 *py (-0.5879)   228 H06 *pz (-0.8176)   244 O07 *s  (-0.2994)   245 O07 *s  (-1.2085)                              
+               248 O07 *px (-0.3155)   249 O07 *px (-0.9421)   252 O07 *py (-0.1304)   253 O07 *py (-1.6978)                              
+               256 O07 *pz (-0.1179)   257 O07 *pz ( 0.2267)   299 O08 *s  ( 0.1036)   300 O08 *s  (-1.6426)                              
+               304 O08 *px ( 0.7558)   307 O08 *py ( 0.1665)   308 O08 *py (-0.2302)   353 H09 *s  ( 0.6593)                              
+               354 H09 *s  ( 0.5808)   360 H09 *py (-0.2786)   379 O10 *s  ( 0.3227)   380 O10 *s  ( 4.1194)                              
+               384 O10 *px (-0.4199)   387 O10 *py ( 0.2981)   388 O10 *py ( 1.2575)   392 O10 *pz (-0.2870)                              
+               434 O11 *s  (-0.2729)   435 O11 *s  (-4.1918)   439 O11 *px (-0.6219)   442 O11 *py ( 0.2772)                              
+               443 O11 *py ( 1.3344)   447 O11 *pz (-0.2698)                                                                              
+         41    0.0993    0.0000                                                                                                           
+                 4 C01 *s  (-1.0344)     5 C01 *s  (-3.5538)     7 C01 *px ( 0.1941)     8 C01 *px (-2.2841)                              
+                 9 C01 *px ( 0.9383)    12 C01 *py ( 0.7255)    13 C01 *py (-0.9338)    15 C01 *pz (-0.1021)                              
+                16 C01 *pz ( 1.1307)    17 C01 *pz (-1.4204)    20 C01 *200(-0.1025)    23 C01 *110(-0.3552)                              
+                26 C01 *101(-0.5813)    29 C01 *020(-0.3005)    32 C01 *011(-0.4479)    35 C01 *002(-0.3887)                              
+                59 C02 *s  (-1.5200)    60 C02 *s  ( 4.3226)    63 C02 *px (-0.5349)    67 C02 *py ( 1.1505)                              
+                68 C02 *py (-0.5133)    71 C02 *pz (-0.3785)    72 C02 *pz ( 4.4148)    78 C02 *110( 0.3992)                              
+                84 C02 *020(-0.3493)    87 C02 *011( 0.3924)    90 C02 *002(-0.2653)   114 O03 *s  (-0.1758)                              
+               115 O03 *s  (-0.8935)   122 O03 *py ( 0.1662)   123 O03 *py ( 0.2039)   127 O03 *pz (-1.0710)                              
+               168 H04 *s  ( 2.7750)   172 H04 *px (-0.6363)   175 H04 *py (-0.1224)   178 H04 *pz ( 0.3577)                              
+               192 H05 *s  (-0.1986)   193 H05 *s  (-1.4039)   194 H05 *s  (-1.6874)   197 H05 *px ( 0.1001)                              
+               200 H05 *py (-0.4086)   203 H05 *pz ( 0.5976)   217 H06 *s  (-0.2382)   218 H06 *s  ( 3.8623)                              
+               219 H06 *s  ( 1.1366)   222 H06 *px (-0.7196)   225 H06 *py ( 0.7429)   228 H06 *pz ( 0.6048)                              
+               245 O07 *s  (-0.8321)   249 O07 *px ( 0.8128)   253 O07 *py ( 0.8667)   257 O07 *pz (-1.2343)                              
+               300 O08 *s  ( 1.2971)   308 O08 *py ( 0.2611)   311 O08 *pz ( 0.1094)   312 O08 *pz ( 0.3083)                              
+               352 H09 *s  (-0.1497)   353 H09 *s  ( 0.6258)   354 H09 *s  ( 0.3193)   360 H09 *py ( 0.2417)                              
+               379 O10 *s  ( 0.1973)   380 O10 *s  ( 1.7380)   384 O10 *px (-0.2563)   387 O10 *py ( 0.1358)                              
+               388 O10 *py ( 0.4657)   434 O11 *s  (-0.1483)   435 O11 *s  (-1.2219)   443 O11 *py ( 0.6044)                              
+               446 O11 *pz (-0.1185)                                                                                                      
+         42    0.1083    0.0000                                                                                                           
+                 5 C01 *s  ( 1.6922)     8 C01 *px ( 0.6731)     9 C01 *px (-1.8977)    11 C01 *py ( 0.3880)                              
+                12 C01 *py (-2.8516)    13 C01 *py (-3.4519)    17 C01 *pz (-0.8188)    20 C01 *200(-0.1853)                              
+                23 C01 *110( 0.2791)    25 C01 *101( 0.1447)    26 C01 *101(-0.3174)    29 C01 *020( 0.3866)                              
+                32 C01 *011( 0.2927)    35 C01 *002( 0.1093)    39 C01 *210( 0.1154)    53 C01 *012( 0.1398)                              
+                59 C02 *s  ( 2.1424)    60 C02 *s  (-2.5498)    62 C02 *px (-0.1461)    63 C02 *px ( 1.3974)                              
+                64 C02 *px ( 2.5956)    67 C02 *py (-0.1770)    68 C02 *py ( 4.7213)    71 C02 *pz ( 0.7526)                              
+                72 C02 *pz ( 0.8420)    78 C02 *110(-0.1142)    81 C02 *101(-0.3007)    84 C02 *020( 0.7851)                              
+                87 C02 *011(-0.1519)    90 C02 *002( 0.1816)   114 O03 *s  (-0.3383)   115 O03 *s  (-3.4533)                              
+               122 O03 *py (-0.1849)   123 O03 *py (-0.2893)   127 O03 *pz ( 0.1182)   139 O03 *020( 0.1834)                              
+               167 H04 *s  (-0.3719)   168 H04 *s  ( 1.5624)   169 H04 *s  ( 1.2793)   171 H04 *px ( 0.1085)                              
+               172 H04 *px ( 0.1159)   192 H05 *s  ( 0.3314)   193 H05 *s  (-1.4810)   194 H05 *s  (-1.0158)                              
+               197 H05 *px (-0.2206)   200 H05 *py ( 0.3670)   203 H05 *pz ( 0.4099)   217 H06 *s  ( 0.4674)                              
+               218 H06 *s  (-3.1276)   219 H06 *s  (-1.1624)   222 H06 *px ( 0.2159)   224 H06 *py ( 0.1326)                              
+               225 H06 *py ( 0.1534)   228 H06 *pz (-0.6886)   245 O07 *s  ( 4.4016)   248 O07 *px ( 0.1180)                              
+               249 O07 *px ( 0.6067)   253 O07 *py (-0.5464)   300 O08 *s  ( 0.3639)   304 O08 *px (-0.2874)                              
+               308 O08 *py (-0.2497)   353 H09 *s  (-0.6935)   354 H09 *s  ( 0.6001)   357 H09 *px (-0.1695)                              
+               363 H09 *pz ( 0.1915)   379 O10 *s  (-0.3345)   380 O10 *s  (-1.5866)   384 O10 *px ( 0.2471)                              
+               387 O10 *py (-0.3096)   388 O10 *py (-0.3937)   434 O11 *s  ( 0.3406)   435 O11 *s  ( 1.3525)                              
+               439 O11 *px ( 0.3169)   442 O11 *py (-0.2394)   443 O11 *py (-0.5004)                                                      
+         43    0.1150    0.0000                                                                                                           
+                 4 C01 *s  ( 4.4370)     5 C01 *s  ( 1.1264)     8 C01 *px ( 0.7716)     9 C01 *px (-2.1820)                              
+                11 C01 *py (-0.1271)    12 C01 *py ( 1.3730)    15 C01 *pz (-0.7078)    16 C01 *pz ( 5.7743)                              
+                17 C01 *pz ( 3.2654)    20 C01 *200( 1.1776)    22 C01 *110(-0.1246)    23 C01 *110( 1.0221)                              
+                26 C01 *101( 0.5045)    29 C01 *020( 0.2468)    31 C01 *011( 0.1840)    32 C01 *011(-0.5350)                              
+                35 C01 *002( 0.3620)    41 C01 *201(-0.1711)    51 C01 *021(-0.1865)    55 C01 *003(-0.1686)                              
+                59 C02 *s  ( 1.0984)    60 C02 *s  (-0.2381)    63 C02 *px ( 0.4361)    64 C02 *px ( 0.1524)                              
+                66 C02 *py ( 0.1315)    67 C02 *py (-0.2110)    68 C02 *py (-0.2173)    72 C02 *pz ( 0.3171)                              
+                75 C02 *200( 0.1744)    81 C02 *101(-0.1719)    84 C02 *020( 0.1760)   114 O03 *s  (-0.3040)                              
+               115 O03 *s  (-0.1412)   122 O03 *py ( 0.3622)   123 O03 *py ( 0.1439)   126 O03 *pz ( 0.1427)                              
+               127 O03 *pz (-0.1594)   139 O03 *020(-0.1272)   168 H04 *s  (-7.1358)   169 H04 *s  ( 0.9600)                              
+               172 H04 *px ( 1.2799)   175 H04 *py ( 0.6512)   178 H04 *pz ( 0.1026)   192 H05 *s  ( 0.4319)                              
+               193 H05 *s  (-5.4013)   194 H05 *s  (-4.4743)   197 H05 *px (-0.5435)   200 H05 *py (-0.4833)                              
+               202 H05 *pz (-0.1412)   203 H05 *pz ( 0.1956)   217 H06 *s  (-0.2588)   218 H06 *s  ( 5.0422)                              
+               219 H06 *s  ( 3.1087)   222 H06 *px ( 0.2494)   224 H06 *py (-0.1209)   225 H06 *py ( 0.7863)                              
+               227 H06 *pz (-0.1442)   228 H06 *pz ( 0.4603)   244 O07 *s  ( 0.1974)   245 O07 *s  ( 1.8025)                              
+               248 O07 *px ( 0.2212)   249 O07 *px ( 0.2738)   253 O07 *py (-0.2673)   257 O07 *pz (-0.4762)                              
+               300 O08 *s  (-6.3209)   303 O08 *px (-0.3227)   308 O08 *py (-1.4340)   311 O08 *pz (-0.2982)                              
+               312 O08 *pz (-1.5266)   318 O08 *110(-0.1076)   352 H09 *s  (-0.6215)   353 H09 *s  ( 3.9784)                              
+               354 H09 *s  ( 0.1330)   357 H09 *px ( 0.8694)   363 H09 *pz ( 0.2216)   371 H09 *020(-0.1335)                              
+               375 H09 *002(-0.1518)   379 O10 *s  (-0.2146)   380 O10 *s  ( 1.1046)   383 O10 *px (-0.1079)                              
+               384 O10 *px ( 0.3930)   387 O10 *py (-0.1087)   388 O10 *py ( 0.5300)   391 O10 *pz ( 0.1450)                              
+               392 O10 *pz (-0.4734)   435 O11 *s  (-1.1339)   438 O11 *px (-0.1370)                                                      
+         44    0.1197    0.0000                                                                                                           
+                 4 C01 *s  (*******)     5 C01 *s  ( 6.8824)     7 C01 *px (-0.1734)     8 C01 *px ( 0.2845)                              
+                 9 C01 *px ( 2.0574)    11 C01 *py ( 0.3276)    12 C01 *py (-3.3489)    13 C01 *py (-0.8336)                              
+                15 C01 *pz (-0.2144)    16 C01 *pz ( 1.4873)    17 C01 *pz ( 0.9217)    20 C01 *200(-2.0553)                              
+                23 C01 *110(-0.2170)    26 C01 *101(-0.8340)    29 C01 *020(-2.2207)    35 C01 *002(-1.5302)                              
+                39 C01 *210( 0.1026)    59 C02 *s  (11.5027)    60 C02 *s  ( 6.8189)    62 C02 *px (-0.2266)                              
+                63 C02 *px ( 1.7861)    64 C02 *px (-3.2221)    66 C02 *py ( 0.7288)    67 C02 *py (-1.7159)                              
+                68 C02 *py ( 0.1136)    70 C02 *pz (-0.1626)    71 C02 *pz ( 0.8774)    72 C02 *pz (-0.5869)                              
+                75 C02 *200( 1.1890)    78 C02 *110(-0.5446)    81 C02 *101( 0.6791)    84 C02 *020( 1.3958)                              
+                87 C02 *011(-0.2950)    90 C02 *002( 0.5506)    94 C02 *210( 0.2185)   104 C02 *030( 0.1980)                              
+               108 C02 *012( 0.1878)   114 O03 *s  (-1.7493)   115 O03 *s  (-4.1603)   118 O03 *px ( 0.3991)                              
+               119 O03 *px ( 0.8118)   122 O03 *py ( 1.1312)   123 O03 *py ( 0.8681)   130 O03 *200(-0.1517)                              
+               133 O03 *110(-0.1205)   139 O03 *020(-0.2398)   167 H04 *s  ( 0.1465)   168 H04 *s  ( 5.3367)                              
+               169 H04 *s  (-1.0968)   172 H04 *px (-1.0888)   175 H04 *py (-0.2986)   178 H04 *pz (-0.3465)                              
+               192 H05 *s  (-0.2652)   193 H05 *s  ( 0.7615)   194 H05 *s  (-1.8534)   200 H05 *py (-0.2008)                              
+               203 H05 *pz (-0.2752)   217 H06 *s  (-0.3681)   218 H06 *s  ( 2.9960)   219 H06 *s  (-0.5653)                              
+               222 H06 *px (-0.6433)   225 H06 *py ( 0.2412)   228 H06 *pz ( 0.5191)   244 O07 *s  (-0.1236)                              
+               245 O07 *s  (-3.6950)   248 O07 *px (-0.2840)   249 O07 *px (-0.5640)   252 O07 *py (-0.7163)                              
+               253 O07 *py (-1.6838)   257 O07 *pz (-0.7240)   263 O07 *110(-0.2160)   272 O07 *011(-0.1121)                              
+               299 O08 *s  (-0.3614)   300 O08 *s  (-1.5635)   304 O08 *px (-0.6959)   307 O08 *py (-0.4095)                              
+               308 O08 *py (-0.9271)   312 O08 *pz ( 0.4374)   352 H09 *s  ( 0.2040)   353 H09 *s  (-0.6451)                              
+               354 H09 *s  (-1.2540)   360 H09 *py ( 0.2996)   379 O10 *s  (-0.5111)   380 O10 *s  (-5.1642)                              
+               384 O10 *px ( 0.3714)   387 O10 *py (-0.3690)   388 O10 *py (-1.8418)   392 O10 *pz ( 0.4340)                              
+               434 O11 *s  ( 0.3941)   435 O11 *s  ( 5.3198)   439 O11 *px ( 0.8166)   442 O11 *py (-0.4471)                              
+               443 O11 *py (-1.6345)   447 O11 *pz ( 0.2224)   453 O11 *110(-0.1029)                                                      
+         45    0.1309    0.0000                                                                                                           
+                 2 C01 2s  (-0.1639)     4 C01 *s  (*******)     5 C01 *s  ( 7.3315)     8 C01 *px (-0.5178)                              
+                12 C01 *py ( 0.9022)    13 C01 *py (-2.0991)    15 C01 *pz ( 0.1663)    16 C01 *pz (-1.6870)                              
+                17 C01 *pz (-0.5875)    20 C01 *200(-4.1059)    23 C01 *110(-0.6986)    29 C01 *020(-4.0470)                              
+                35 C01 *002(-3.9202)    59 C02 *s  ( 9.2817)    60 C02 *s  ( 9.1727)    62 C02 *px (-0.1752)                              
+                63 C02 *px ( 1.5769)    64 C02 *px ( 4.0222)    66 C02 *py ( 0.4713)    67 C02 *py (-0.4071)                              
+                68 C02 *py (-1.6354)    70 C02 *pz (-0.1159)    71 C02 *pz ( 0.7697)    72 C02 *pz ( 1.4266)                              
+                75 C02 *200( 0.8513)    78 C02 *110( 0.5656)    81 C02 *101( 0.2855)    84 C02 *020( 1.2120)                              
+                87 C02 *011( 0.1606)    90 C02 *002( 0.5319)    94 C02 *210( 0.1203)   104 C02 *030( 0.1404)                              
+               108 C02 *012( 0.1431)   114 O03 *s  (-1.6754)   115 O03 *s  (-6.0871)   119 O03 *px (-0.6045)                              
+               122 O03 *py ( 1.1997)   123 O03 *py ( 1.6651)   127 O03 *pz (-0.2190)   130 O03 *200(-0.1107)                              
+               139 O03 *020(-0.2490)   145 O03 *002(-0.1023)   167 H04 *s  (-0.7913)   168 H04 *s  (11.9479)                              
+               169 H04 *s  (-1.1989)   172 H04 *px (-2.1423)   175 H04 *py (-0.8538)   178 H04 *pz (-0.7453)                              
+               180 H04 *200(-0.1050)   186 H04 *020(-0.1536)   190 H04 *002(-0.1317)   192 H05 *s  (-0.9571)                              
+               193 H05 *s  (12.1816)   194 H05 *s  (-1.2423)   197 H05 *px ( 0.9728)   200 H05 *py ( 1.2525)                              
+               203 H05 *pz (-2.0720)   205 H05 *200(-0.1338)   211 H05 *020(-0.1207)   215 H05 *002(-0.1121)                              
+               217 H06 *s  (-0.6737)   218 H06 *s  ( 8.8468)   219 H06 *s  (-3.4465)   222 H06 *px (-0.6003)                              
+               225 H06 *py ( 1.2703)   228 H06 *pz ( 1.5237)   230 H06 *200(-0.1244)   245 O07 *s  (-2.4935)                              
+               248 O07 *px (-0.1982)   249 O07 *px (-1.0617)   252 O07 *py (-0.3467)   253 O07 *py ( 1.0504)                              
+               257 O07 *pz (-0.4432)   299 O08 *s  (-0.1344)   300 O08 *s  ( 0.4216)   303 O08 *px (-0.1368)                              
+               304 O08 *px (-0.4910)   307 O08 *py (-0.1738)   312 O08 *pz (-0.3068)   318 O08 *110(-0.1023)                              
+               353 H09 *s  (-0.6031)   354 H09 *s  ( 0.7138)   360 H09 *py (-0.1615)   363 H09 *pz ( 0.2149)                              
+               379 O10 *s  ( 0.4779)   380 O10 *s  ( 3.6005)   383 O10 *px (-0.1223)   387 O10 *py ( 0.4094)                              
+               388 O10 *py ( 1.1808)   392 O10 *pz (-0.3673)   434 O11 *s  (-0.4576)   435 O11 *s  (-3.3344)                              
+               438 O11 *px (-0.1250)   439 O11 *px (-0.5294)   442 O11 *py ( 0.4300)   443 O11 *py ( 1.0867)                              
+               447 O11 *pz (-0.1802)                                                                                                      
+         46    0.1351    0.0000                                                                                                           
+                 4 C01 *s  (14.7947)     5 C01 *s  ( 2.5882)     8 C01 *px ( 0.8133)     9 C01 *px (-3.1975)                              
+                11 C01 *py ( 0.4492)    12 C01 *py (-2.5146)    13 C01 *py (-1.7615)    15 C01 *pz ( 0.3967)                              
+                16 C01 *pz (-2.2562)    17 C01 *pz (-4.4027)    20 C01 *200( 2.1496)    25 C01 *101( 0.1075)                              
+                26 C01 *101( 0.2344)    29 C01 *020( 1.2878)    31 C01 *011(-0.1136)    32 C01 *011( 0.7744)                              
+                35 C01 *002( 1.9957)    39 C01 *210( 0.1183)    51 C01 *021( 0.1256)    53 C01 *012( 0.1286)                              
+                59 C02 *s  (-2.6268)    60 C02 *s  (-5.8829)    62 C02 *px ( 0.2779)    63 C02 *px (-0.4321)                              
+                64 C02 *px (-2.4090)    66 C02 *py ( 0.2938)    67 C02 *py ( 0.4770)    70 C02 *pz ( 0.1349)                              
+                72 C02 *pz (-0.1212)    75 C02 *200(-0.2137)    81 C02 *101( 0.1991)    84 C02 *020(-0.7222)                              
+                90 C02 *002(-0.5329)    92 C02 *300( 0.1099)   114 O03 *s  (-0.6102)   115 O03 *s  ( 5.0761)                              
+               118 O03 *px ( 0.1984)   119 O03 *px ( 0.1541)   122 O03 *py ( 0.4518)   123 O03 *py (-1.1204)                              
+               130 O03 *200(-0.1976)   133 O03 *110(-0.1174)   139 O03 *020(-0.2464)   145 O03 *002(-0.1571)                              
+               167 H04 *s  (-0.1924)   168 H04 *s  (-6.2117)   169 H04 *s  ( 6.5945)   171 H04 *px ( 0.1650)                              
+               172 H04 *px ( 1.3332)   175 H04 *py ( 1.0899)   178 H04 *pz ( 0.6481)   192 H05 *s  ( 0.2584)                              
+               193 H05 *s  (-3.4385)   194 H05 *s  ( 0.9996)   200 H05 *py (-0.2463)   203 H05 *pz ( 0.6026)                              
+               217 H06 *s  ( 0.8278)   218 H06 *s  (-9.6694)   219 H06 *s  (-5.0640)   222 H06 *px ( 0.1429)                              
+               224 H06 *py ( 0.1338)   225 H06 *py (-0.9891)   227 H06 *pz ( 0.1477)   228 H06 *pz (-0.7743)                              
+               236 H06 *020( 0.1220)   240 H06 *002( 0.1112)   244 O07 *s  ( 0.7068)   245 O07 *s  ( 1.2314)                              
+               248 O07 *px ( 0.3917)   249 O07 *px ( 0.5619)   252 O07 *py (-0.2728)   253 O07 *py (-0.6065)                              
+               256 O07 *pz ( 0.1535)   257 O07 *pz (-0.2180)   266 O07 *101( 0.1137)   299 O08 *s  (-0.1966)                              
+               300 O08 *s  (-3.7469)   303 O08 *px (-0.2706)   304 O08 *px (-1.7488)   307 O08 *py (-0.2711)                              
+               308 O08 *py (-1.0807)   311 O08 *pz (-0.2212)   312 O08 *pz (-0.3021)   352 H09 *s  ( 0.1040)                              
+               353 H09 *s  (-0.5060)   354 H09 *s  (-1.3509)   357 H09 *px ( 0.2827)   363 H09 *pz ( 0.1574)                              
+               379 O10 *s  ( 0.1226)   380 O10 *s  ( 1.6530)   383 O10 *px (-0.2266)   384 O10 *px ( 0.3624)                              
+               387 O10 *py ( 0.1429)   388 O10 *py ( 0.5031)   392 O10 *pz (-0.1673)   434 O11 *s  (-0.2399)                              
+               435 O11 *s  (-1.5676)   438 O11 *px (-0.2330)   439 O11 *px (-0.1032)   442 O11 *py ( 0.1460)                              
+               443 O11 *py ( 0.5538)                                                                                                      
+         47    0.1432    0.0000                                                                                                           
+                 4 C01 *s  ( 2.2786)     5 C01 *s  (-1.0481)     7 C01 *px ( 0.6887)     8 C01 *px (-4.9775)                              
+                 9 C01 *px (-4.6935)    11 C01 *py ( 0.4397)    12 C01 *py (-2.7160)    13 C01 *py (-2.6435)                              
+                15 C01 *pz (-0.4102)    16 C01 *pz ( 2.7921)    17 C01 *pz ( 2.8233)    23 C01 *110(-0.1557)                              
+                25 C01 *101( 0.2376)    26 C01 *101(-0.9549)    31 C01 *011( 0.2083)    32 C01 *011(-0.9211)                              
+                35 C01 *002( 0.4634)    37 C01 *300( 0.1483)    39 C01 *210( 0.1456)    43 C01 *120( 0.1766)                              
+                47 C01 *102( 0.1848)    51 C01 *021(-0.1087)    53 C01 *012( 0.1047)    55 C01 *003(-0.1101)                              
+                59 C02 *s  ( 0.4129)    60 C02 *s  ( 3.8900)    63 C02 *px ( 0.4851)    64 C02 *px ( 0.8142)                              
+                66 C02 *py ( 0.1659)    67 C02 *py ( 0.8435)    68 C02 *py (-0.4376)    71 C02 *pz (-0.5522)                              
+                72 C02 *pz (-1.4912)    75 C02 *200(-0.1877)    81 C02 *101( 0.4109)    87 C02 *011( 0.1698)                              
+                90 C02 *002(-0.2578)   114 O03 *s  (-0.8656)   115 O03 *s  (-0.1269)   118 O03 *px ( 0.1984)                              
+               119 O03 *px ( 0.2416)   122 O03 *py ( 0.4419)   123 O03 *py (-0.1145)   127 O03 *pz ( 0.1270)                              
+               130 O03 *200(-0.1296)   139 O03 *020(-0.1298)   145 O03 *002(-0.1090)   167 H04 *s  (-0.5688)                              
+               168 H04 *s  ( 4.9880)   169 H04 *s  ( 4.9016)   171 H04 *px ( 0.2375)   172 H04 *px (-0.4105)                              
+               178 H04 *pz (-0.2819)   192 H05 *s  ( 0.6868)   193 H05 *s  (-9.3193)   194 H05 *s  (-6.3098)                              
+               196 H05 *px ( 0.1379)   197 H05 *px (-0.1516)   199 H05 *py ( 0.1282)   200 H05 *py (-0.7229)                              
+               202 H05 *pz (-0.1690)   203 H05 *pz ( 1.0805)   217 H06 *s  (-0.1163)   218 H06 *s  ( 0.9888)                              
+               219 H06 *s  ( 1.5243)   222 H06 *px ( 0.3141)   225 H06 *py ( 0.1292)   228 H06 *pz ( 0.1749)                              
+               244 O07 *s  ( 0.1112)   245 O07 *s  (-0.8306)   248 O07 *px (-0.1322)   249 O07 *px (-0.8012)                              
+               252 O07 *py (-0.2865)   253 O07 *py (-0.2360)   256 O07 *pz ( 0.1163)   257 O07 *pz ( 0.6666)                              
+               300 O08 *s  ( 0.6574)   303 O08 *px (-0.1326)   304 O08 *px (-0.1051)   307 O08 *py (-0.1409)                              
+               308 O08 *py ( 0.4006)   312 O08 *pz ( 0.4602)   352 H09 *s  ( 0.1061)   353 H09 *s  (-1.5594)                              
+               354 H09 *s  (-0.8928)   357 H09 *px (-0.5645)   360 H09 *py (-0.1798)   363 H09 *pz (-0.1628)                              
+               379 O10 *s  ( 0.3695)   380 O10 *s  (-0.2963)   384 O10 *px (-0.2535)   387 O10 *py ( 0.2448)                              
+               388 O10 *py (-0.5245)   391 O10 *pz (-0.2419)   392 O10 *pz ( 0.6039)   434 O11 *s  (-0.1985)                              
+               435 O11 *s  ( 1.2794)   438 O11 *px ( 0.1994)   439 O11 *px (-0.2962)   442 O11 *py ( 0.1234)                              
+               446 O11 *pz (-0.1533)   459 O11 *020(-0.1315)                                                                              
+
+      Mulliken population Analysis for root number: 1
+      -----------------------------------------------
+
+
+      Mulliken charges per center and basis function type
+      ---------------------------------------------------
+
+               C01     C02     O03     H04     H05     H06     O07     O08     H09     O10     O11 
+      1s     1.9997  1.9994  1.9913  1.4041  1.3985  1.3964  1.9915  1.9919  1.1616  1.9902  1.9900
+      2s     1.4926  1.3590  1.8247  0.0000  0.0000  0.0000  1.8379  1.8367  0.0000  1.8686  1.8763
+      2px    1.2137  0.9170  1.7234  0.0000  0.0000  0.0000  1.5630  1.5785  0.0000  1.5170  1.5029
+      2pz    1.2544  0.8672  1.4465  0.0000  0.0000  0.0000  1.8034  1.8949  0.0000  1.5297  1.5181
+      2py    1.2029  1.1028  1.5161  0.0000  0.0000  0.0000  1.1237  1.0999  0.0000  1.2819  1.2793
+      *s    -0.3297 -0.3331  0.1205 -0.7543 -0.7266 -0.7296  0.0306  0.0083 -0.5165  0.0593  0.1081
+      *px   -0.2431 -0.3122 -0.0837  0.0257  0.0129  0.0122 -0.1561 -0.1861  0.0478 -0.1319 -0.1495
+      *pz   -0.1989 -0.2242 -0.0938  0.0171  0.0149  0.0140 -0.1392 -0.1399  0.0467 -0.1407 -0.1439
+      *py   -0.2491 -0.3776 -0.2550  0.0115  0.0154  0.0141 -0.1810 -0.1390  0.0168 -0.2376 -0.2388
+      *200   0.0671  0.0375  0.0032  0.0094  0.0106  0.0097 -0.0034  0.0028  0.0149 -0.0139 -0.0145
+      *110   0.0482  0.0811  0.0127  0.0019  0.0017  0.0028  0.0011  0.0047  0.0055  0.0129  0.0153
+      *101   0.0282  0.0357  0.0016  0.0013  0.0002  0.0020  0.0076  0.0034  0.0059  0.0017  0.0017
+      *020   0.0304  0.0669  0.0076  0.0084  0.0111  0.0109  0.0063  0.0095 -0.0073  0.0001  0.0070
+      *011   0.0367  0.0686  0.0201  0.0016  0.0011 -0.0003  0.0043  0.0065  0.0011  0.0133  0.0142
+      *002   0.0295 -0.0150  0.0015  0.0099  0.0082  0.0055 -0.0091 -0.0065 -0.0030 -0.0161 -0.0159
+      *300   0.0556  0.0296  0.0579  0.0000  0.0000  0.0000  0.0652  0.0478  0.0000  0.0449  0.0465
+      *210   0.0192  0.0085  0.0105  0.0000  0.0000  0.0000  0.0130  0.0110  0.0000  0.0104  0.0107
+      *201   0.0241  0.0121  0.0144  0.0000  0.0000  0.0000  0.0309  0.0263  0.0000  0.0164  0.0158
+      *120   0.0237  0.0015  0.0348  0.0000  0.0000  0.0000  0.0164  0.0202  0.0000  0.0254  0.0270
+      *111   0.0037  0.0057  0.0004  0.0000  0.0000  0.0000  0.0006  0.0001  0.0000  0.0006  0.0006
+      *102   0.0137  0.0067  0.0206  0.0000  0.0000  0.0000  0.0134  0.0088  0.0000  0.0141  0.0151
+      *030   0.0324  0.0364  0.0691  0.0000  0.0000  0.0000  0.0521  0.0613  0.0000  0.0610  0.0631
+      *021   0.0231  0.0107  0.0323  0.0000  0.0000  0.0000  0.0265  0.0291  0.0000  0.0268  0.0270
+      *012   0.0411  0.0033  0.0114  0.0000  0.0000  0.0000  0.0079  0.0072  0.0000  0.0092  0.0096
+      *003   0.0515  0.0101  0.0471  0.0000  0.0000  0.0000  0.0593  0.0559  0.0000  0.0462  0.0460
+      Total  6.6706  5.3976  8.5353  0.7365  0.7480  0.7379  8.1659  8.2334  0.7735  7.9895  8.0118
+
+      N-E   -0.6706  0.6024 -0.5353  0.2635  0.2520  0.2621 -0.1659 -0.2334  0.2265  0.0105 -0.0118
+
+      Total electronic charge=   56.000000
+
+      Total            charge=    0.000000
+
+
+      Expectation values of various properties for root number: 1
+      -----------------------------------------------------------
+
+Dipole Moment (Debye):                                                          
+Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+               X=   -0.7953               Y=   -2.8790               Z=    1.2697           Total=    3.2455
+Quadrupole Moment (Debye*Ang):                                                  
+Origin of the operator (Ang)=   -0.0586    0.0391   -0.0488
+              XX=  -34.5777              XY=   -4.1464              XZ=    0.5748              YY=  -42.8826
+              YZ=   -0.7643              ZZ=  -39.1483
+In traceless form (Debye*Ang)
+              XX=    6.4377              XY=   -6.2196              XZ=    0.8622              YY=   -6.0196
+              YZ=   -1.1465              ZZ=   -0.4181
+
+      Mulliken spin population Analysis for root number: 1
+      ---------------------------------------------------
+
+
+      Mulliken spin population per center and basis function type
+      ---------------------------------------------------
+
+               C01     C02     O03     H04     H05     H06     O07     O08     H09     O10     O11 
+      1s     0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000 -0.0002  0.0000  0.0000
+      2s     0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0001  0.0003
+      2px    0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0002  0.0000  0.4416  0.4680
+      2pz    0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.4707  0.4919
+      2py    0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0529  0.0580
+      *s     0.0001 -0.0001  0.0000  0.0000  0.0000  0.0000  0.0000  0.0001  0.0003  0.0000  0.0000
+      *px    0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000 -0.0003  0.0000 -0.0110 -0.0172
+      *pz    0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0001 -0.0001  0.0001 -0.0149 -0.0169
+      *py    0.0000 -0.0001  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000 -0.0001 -0.0024 -0.0010
+      *200   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0002  0.0006  0.0000
+      *110   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000 -0.0001  0.0000 -0.0001
+      *101   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0001  0.0002  0.0000
+      *020   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0004 -0.0003
+      *011   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0010 -0.0003
+      *002   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000 -0.0001  0.0000
+      *300   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0112  0.0121
+      *210   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0011  0.0011
+      *201   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0042  0.0043
+      *120   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0018  0.0021
+      *111   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0001
+      *102   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0038  0.0042
+      *030   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0005  0.0006
+      *021   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0017  0.0019
+      *012   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0008  0.0007
+      *003   0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0000  0.0127  0.0133
+      Total  0.0001 -0.0002  0.0000  0.0000  0.0000  0.0000  0.0001  0.0000  0.0004  0.9770  1.0226
+
+      Total electronic spin=    2.000000
+
+      Average orbitals are written to the RASORB           file
+      Natural orbitals for root   1 are written to the RASORB.1         file
+      Spin density orbitals for root   1 are written to the SPDORB.1         file
+
+FORTRAN STOP
+real 39660.64
+user 29886.27
+sys 1370.62
+--- Stop Module: rasscf at Fri Feb 12 17:19:49 2010 /rc=0 ---
+--- Stop Module: rasscf at Fri Feb 12 17:19:49 2010 /rc=0 ---
+total 72643120
+-rw-r--r--  1 user grupo     4321492 Feb 12 06:18 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.GssOrb
+-rw-r--r--  1 user grupo    40940040 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.JobIph
+-rw-r--r--  1 user grupo          40 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.NqGrid
+-rw-r--r--  1 user grupo    16892696 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OneInt
+-rw-r--r--  1 user grupo    19539752 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OneRel
+-rw-r--r--  1 user grupo 20971520000 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt
+-rw-r--r--  1 user grupo 20971520000 Feb 12 06:17 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt1
+-rw-r--r--  1 user grupo 20971520000 Feb 12 06:17 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt2
+-rw-r--r--  1 user grupo 11293722624 Feb 12 04:25 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt3
+-rw-r--r--  1 user grupo     4321492 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RasOrb.1
+-rw-r--r--  1 user grupo         197 Feb 12 06:18 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Rasscf.Input
+-rw-r--r--  1 user grupo     8793112 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RunFile
+-rw-r--r--  1 user grupo        2147 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Seward.Input
+-rw-r--r--  1 user grupo     4321492 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.SpdOrb.1
+-rw-r--r--  1 user grupo       21926 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.SymInfo
+-rw-r--r--  1 user grupo     4320835 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.TmpOrb
+-rw-r--r--  1 user grupo     5688600 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.rasscf.molden
+-rw-r--r--  1 user grupo           2 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.returncode
+-rw-r--r--  1 user grupo        9383 Feb 12 16:41 CI_Iterations.txt
+-rw-r--r--  1 user grupo        3801 Feb 12 06:18 CleanInput
+lrwxrwxrwx  1 user grupo          67 Feb 12 06:18 INPORB -> /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.McOrb
+lrwxrwxrwx  1 user grupo          68 Feb 12 06:18 RASORB -> /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RasOrb
+-rw-r--r--  1 user grupo        1694 Feb 12 17:19 extract.xml
+-rw-r--r--  1 user grupo         214 Feb 12 07:50 molcas.control
+-rw-r--r--  1 user grupo         530 Feb 12 06:18 molcas.env
+-rw-r--r--  1 user grupo        1975 Feb 12 17:19 molcas_info
+-rw-r--r--  1 user grupo           2 Feb 12 17:19 returncode
+-rw-r--r--  1 user grupo         197 Feb 12 06:18 stdin
+>>> LINK -FORCE /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Pt2Orb PT2ORB
+
+*** Warning: real file does not exist: /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Pt2Orb
+--- Start Module: caspt2 at Fri Feb 12 17:19:50 2010 
+
+
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+                                  MOLCAS executing module CASPT2 with 4000 MB of memory                                 
+                                              at 17:19:50 Fri Feb 12 2010                                               
+()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()()
+
+
+
+      Wave function specifications:
+      -----------------------------
+
+      Number of closed shell electrons          26
+      Number of electrons in active shells      16
+      Max number of holes in RAS1 space          0
+      Max number of electrons in RAS3 space      0
+      Number of inactive orbitals               13
+      Number of active orbitals                 14
+      Number of secondary orbitals             451
+      Spin quantum number                      1.0
+      State symmetry                             1
+      Number of configuration state fnc.   3864861
+      Number of root(s) available                1
+      Root passed to geometry opt.               1
+      A file JOBMIX will be created.
+      This is a CASSCF reference function
+
+
+      Orbital specifications:
+      -----------------------
+
+      Symmetry species                           1
+                                                 a
+      Frozen orbitals                            7
+      Inactive orbitals                         13
+      Active orbitals                           14
+      Secondary orbitals                       451
+      Deleted orbitals                           0
+      Number of basis functions                485
+
+
+      Type of  Fock operator to use: STANDARD
+      Type of HZERO operator to use: STANDARD IPEA           
+      The CANONICAL keyword was not used in the RASSCF program.
+      Therefore, input orbitals should be transformed.
+      The input orbitals and the CI vector will be transformed.
+
+--------------------------------------------------------------------------------
+ Estimated memory requirements:
+  POLY3 :                517993362
+  MKRHS :                 37658137
+  SIGMA :                 57472373
+  DIADNS:                 74037964
+  PRPCTL:                132317011
+ Available workspace:    521540655
+
+********************************************************************************
+ Single-state initialization phase begins for state  1
+--------------------------------------------------------------------------------
+ TRACTL OrdInt status: non-squared
+ TRACTL OrdInt status: non-squared
+--------------------------------------------------------------------------------
+  Single-state initialization phase finished.
+
+********************************************************************************
+  CASPT2 EQUATION SOLUTION
+--------------------------------------------------------------------------------
+  Total nr of CASPT2 parameters:
+   Before reduction:    78800984
+   After  reduction:    78800893
+
+ The contributions to the second order correlation energy in atomic units.
+-----------------------------------------------------------------------------------------------------------------------------
+  IT.      VJTU        VJTI        ATVX        AIVX        VJAI        BVAT        BJAT        BJAI        TOTAL       RNORM  
+-----------------------------------------------------------------------------------------------------------------------------
+   1    -0.012169   -0.007928   -0.073576   -0.191255   -0.048590   -0.208904   -0.267996   -0.467326   -1.277744    0.044923
+   2    -0.012966   -0.008448   -0.074642   -0.195298   -0.049585   -0.209947   -0.269377   -0.468741   -1.289005    0.009857
+   3    -0.013011   -0.008457   -0.074691   -0.195441   -0.049583   -0.209986   -0.269332   -0.468628   -1.289127    0.002606
+   4    -0.013039   -0.008463   -0.074644   -0.195284   -0.049540   -0.209916   -0.269235   -0.468542   -1.288663    0.000616
+   5    -0.013039   -0.008463   -0.074641   -0.195281   -0.049539   -0.209913   -0.269237   -0.468544   -1.288657    0.000160
+   6    -0.013040   -0.008462   -0.074643   -0.195285   -0.049540   -0.209918   -0.269243   -0.468550   -1.288681    0.000037
+   7    -0.013040   -0.008462   -0.074643   -0.195285   -0.049540   -0.209918   -0.269243   -0.468550   -1.288682    0.000010
+   8    -0.013040   -0.008462   -0.074643   -0.195285   -0.049540   -0.209918   -0.269243   -0.468550   -1.288680    0.000003
+-------------------------------------------------------------------------------------------------------------------
+
+  FINAL CASPT2 RESULT:
+
+      Reference energy:        -452.5730841528
+      E2 (Non-variational):      -1.2886804473
+      E2 (Variational):          -1.2886805415
+      Total energy:            -453.8617646943
+      Residual norm:              0.0000007485
+      Reference weight:           0.76303
+
+      Contributions to the CASPT2 correlation energy
+      Active & Virtual Only:         -0.2845606948
+      One Inactive Excited:          -0.4775678282
+      Two Inactive Excited:          -0.5265519244
+
+
+----------------------------------------------------------------------------------------------------
+ Report on small energy denominators, large coefficients, and large energy contributions.
+CASE  SYMM ACTIVE-MIX  NON-ACTIVE INDICES          DENOMINATOR     RHS VALUE       COEFFICIENT     CONTRIBUTION
+VJTU     1  Mu1.0038  In1.012                       1.85033115      0.04887990     -0.03031751     -0.00148192
+VJTU     1  Mu1.0001  In1.019                       0.05028931      0.00000480      0.00003068      0.00000000
+VJTU     1  Mu1.0002  In1.019                       0.05161106      0.00000350     -0.00006134      0.00000000
+VJTU     1  Mu1.0001  In1.020                       0.04256993      0.00000143      0.00010016      0.00000000
+VJTU     1  Mu1.0002  In1.020                       0.04389168      0.00000136     -0.00006791      0.00000000
+ATVX     1  Mu1.0001  Se1.035                       0.07101638     -0.00005224      0.00051075     -0.00000003
+ATVX     1  Mu1.0002  Se1.035                       0.07165273     -0.00005170      0.00054144     -0.00000003
+ATVX     1  Mu1.0001  Se1.036                       0.08429666     -0.00002628      0.00020541     -0.00000001
+ATVX     1  Mu1.0002  Se1.036                       0.08493302      0.00002770     -0.00026486     -0.00000001
+ATVX     1  Mu1.0001  Se1.037                       0.08765890     -0.00012990      0.00099906     -0.00000013
+ATVX     1  Mu1.0002  Se1.037                       0.08829525      0.00002525     -0.00018667      0.00000000
+ATVX     1  Mu1.0001  Se1.038                       0.09993816      0.00010731     -0.00069004     -0.00000007
+ATVX     1  Mu1.0013  Se1.106                       1.49033711      0.04078040     -0.02684190     -0.00109462
+ATVX     1  Mu1.0013  Se1.205                       2.70439686     -0.08226818      0.03017476     -0.00248242
+
+********************************************************************************
+  CASPT2 PROPERTY SECTION
+--------------------------------------------------------------------------------
+
+
+      Mulliken population Analysis:
+      -----------------------------
+
+      Mulliken charges per center and basis function type
+      ---------------------------------------------------
+
+               C01     C02     O03     H04     H05     H06     O07     O08     H09     O10     O11 
+      1s     1.9997  1.9994  1.9913  1.3917  1.3862  1.3842  1.9915  1.9919  1.1565  1.9902  1.9900
+      2s     1.4835  1.3529  1.8145  0.0000  0.0000  0.0000  1.8280  1.8254  0.0000  1.8595  1.8672
+      2px    1.2019  0.9144  1.7039  0.0000  0.0000  0.0000  1.5491  1.5643  0.0000  1.5085  1.4946
+      2pz    1.2424  0.8633  1.4342  0.0000  0.0000  0.0000  1.7845  1.8744  0.0000  1.5213  1.5098
+      2py    1.1905  1.0964  1.5035  0.0000  0.0000  0.0000  1.1141  1.0928  0.0000  1.2737  1.2712
+      *s    -0.3201 -0.3347  0.1253 -0.7398 -0.7130 -0.7159  0.0363  0.0127 -0.5088  0.0619  0.1102
+      *px   -0.2386 -0.3102 -0.0798  0.0244  0.0132  0.0129 -0.1520 -0.1819  0.0476 -0.1263 -0.1436
+      *pz   -0.1936 -0.2214 -0.0906  0.0179  0.0138  0.0132 -0.1342 -0.1327  0.0476 -0.1347 -0.1380
+      *py   -0.2420 -0.3747 -0.2496  0.0118  0.0156  0.0136 -0.1765 -0.1350  0.0177 -0.2338 -0.2351
+      *200   0.0718  0.0394  0.0071  0.0093  0.0105  0.0096  0.0007  0.0058  0.0149 -0.0111 -0.0116
+      *110   0.0517  0.0835  0.0178  0.0019  0.0018  0.0028  0.0061  0.0090  0.0056  0.0171  0.0194
+      *101   0.0322  0.0383  0.0063  0.0014  0.0002  0.0021  0.0129  0.0080  0.0060  0.0058  0.0056
+      *020   0.0321  0.0686  0.0104  0.0083  0.0109  0.0108  0.0092  0.0117 -0.0071  0.0022  0.0091
+      *011   0.0405  0.0707  0.0247  0.0017  0.0011 -0.0002  0.0091  0.0111  0.0013  0.0176  0.0184
+      *002   0.0314 -0.0130  0.0051  0.0098  0.0082  0.0055 -0.0055 -0.0033 -0.0029 -0.0133 -0.0132
+      *300   0.0555  0.0291  0.0582  0.0000  0.0000  0.0000  0.0651  0.0487  0.0000  0.0452  0.0467
+      *210   0.0191  0.0090  0.0109  0.0000  0.0000  0.0000  0.0135  0.0115  0.0000  0.0106  0.0109
+      *201   0.0242  0.0123  0.0148  0.0000  0.0000  0.0000  0.0312  0.0269  0.0000  0.0167  0.0161
+      *120   0.0236  0.0021  0.0351  0.0000  0.0000  0.0000  0.0168  0.0206  0.0000  0.0257  0.0273
+      *111   0.0037  0.0061  0.0009  0.0000  0.0000  0.0000  0.0011  0.0005  0.0000  0.0010  0.0010
+      *102   0.0139  0.0067  0.0209  0.0000  0.0000  0.0000  0.0138  0.0094  0.0000  0.0144  0.0154
+      *030   0.0323  0.0359  0.0688  0.0000  0.0000  0.0000  0.0518  0.0609  0.0000  0.0609  0.0629
+      *021   0.0227  0.0110  0.0325  0.0000  0.0000  0.0000  0.0269  0.0295  0.0000  0.0271  0.0273
+      *012   0.0401  0.0036  0.0118  0.0000  0.0000  0.0000  0.0084  0.0077  0.0000  0.0095  0.0099
+      *003   0.0514  0.0105  0.0472  0.0000  0.0000  0.0000  0.0598  0.0568  0.0000  0.0465  0.0461
+      Total  6.6700  5.3991  8.5253  0.7383  0.7484  0.7386  8.1617  8.2266  0.7784  7.9961  8.0175
+
+      N-E   -0.6700  0.6009 -0.5253  0.2617  0.2516  0.2614 -0.1617 -0.2266  0.2216  0.0039 -0.0175
+
+      Total electronic charge=   56.000000
+
+      Total            charge=    0.000000
+
+      Expectation values of various properties:
+      -----------------------------------------
+Dipole Moment (Debye):                                                          
+Origin of the operator (Ang)=    0.0000    0.0000    0.0000
+               X=   -0.5078               Y=   -2.8445               Z=    1.2204           Total=    3.1366
+Quadrupole Moment (Debye*Ang):                                                  
+Origin of the operator (Ang)=   -0.0586    0.0391   -0.0488
+              XX=  -35.1055              XY=   -4.0587              XZ=    0.6787              YY=  -42.8863
+              YZ=   -0.7727              ZZ=  -39.2775
+In traceless form (Debye*Ang)
+              XX=    5.9764              XY=   -6.0880              XZ=    1.0181              YY=   -5.6948
+              YZ=   -1.1591              ZZ=   -0.2816
+
+********************************************************************************
+ CASPT2 TIMING INFORMATION: CPU(s), I/O(s).
+  Inizialization         36872.1840356.86
+  CASPT2 equations        7545.38 8189.76
+  Properties               363.58  382.47
+  Gradient/MS coupling       0.00    0.00
+ Total time              44781.1448929.09
+
+  A NEW JOBIPH FILE NAMED 'JOBMIX' IS PREPARED.
+********************************************************************************
+
+  The CI coefficients for the MIXED state nr.   1
+--------------------------------------------------------------------------------
+ CI COEFFICIENTS LARGER THAN 0.50D-01
+  Occupation of active orbitals, and spin coupling
+  of open shells. (u,d: Spin up or down).
+   Conf  Occupation          Coef       Weight                                   
+      1  2222222uu00000         0.928718         0.862517
+   1053  2222220uu20000        -0.179593         0.032253
+   2533  2222202uu02000        -0.133299         0.017769
+   3820  2222022uu00200        -0.083160         0.006916
+   4006  222ud222u00u00        -0.066339         0.004401
+   4217  22u2d22u200u00         0.065734         0.004321
+  11842  222uu222u00d00         0.076097         0.005791
+  12284  22u2u22u200d00        -0.076199         0.005806
+  13546  22uu2222200000         0.153215         0.023475
+
+FORTRAN STOP
+real 48923.69
+user 44774.63
+sys 851.58
+--- Stop Module: caspt2 at Sat Feb 13 06:55:14 2010 /rc=0 ---
+--- Stop Module: caspt2 at Sat Feb 13 06:55:14 2010 /rc=0 ---
+total 72707712
+-rw-r--r--  1 user grupo         141 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Caspt2.Input
+-rw-r--r--  1 user grupo     4321492 Feb 12 06:18 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.GssOrb
+-rw-r--r--  1 user grupo    40940040 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.JobIph
+-rw-r--r--  1 user grupo    35331272 Feb 13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.JobMix
+-rw-r--r--  1 user grupo          40 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.NqGrid
+-rw-r--r--  1 user grupo    16892696 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OneInt
+-rw-r--r--  1 user grupo    19539752 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OneRel
+-rw-r--r--  1 user grupo 20971520000 Feb 13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt
+-rw-r--r--  1 user grupo 20971520000 Feb 12 06:17 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt1
+-rw-r--r--  1 user grupo 20971520000 Feb 12 06:17 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt2
+-rw-r--r--  1 user grupo 11293722624 Feb 12 04:25 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt3
+-rw-r--r--  1 user grupo     4321492 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RasOrb.1
+-rw-r--r--  1 user grupo         197 Feb 12 06:18 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Rasscf.Input
+-rw-r--r--  1 user grupo    30818184 Feb 13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Restart
+-rw-r--r--  1 user grupo     8794120 Feb 13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RunFile
+-rw-r--r--  1 user grupo        2147 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Seward.Input
+-rw-r--r--  1 user grupo     4321492 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.SpdOrb.1
+-rw-r--r--  1 user grupo       21926 Feb 12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.SymInfo
+-rw-r--r--  1 user grupo     4320835 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.TmpOrb
+-rw-r--r--  1 user grupo     5688600 Feb 12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.rasscf.molden
+-rw-r--r--  1 user grupo           2 Feb 13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.returncode
+-rw-r--r--  1 user grupo        9383 Feb 12 16:41 CI_Iterations.txt
+-rw-r--r--  1 user grupo        3801 Feb 12 06:18 CleanInput
+lrwxrwxrwx  1 user grupo          67 Feb 12 06:18 INPORB -> /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.McOrb
+lrwxrwxrwx  1 user grupo          68 Feb 12 17:19 PT2ORB -> /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Pt2Orb
+lrwxrwxrwx  1 user grupo          68 Feb 12 06:18 RASORB -> /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RasOrb
+-rw-r--r--  1 user grupo        1724 Feb 13 06:55 extract.xml
+-rw-r--r--  1 user grupo         214 Feb 12 07:50 molcas.control
+-rw-r--r--  1 user grupo         530 Feb 12 17:19 molcas.env
+-rw-r--r--  1 user grupo        2651 Feb 13 06:55 molcas_info
+-rw-r--r--  1 user grupo           2 Feb 13 06:55 returncode
+-rw-r--r--  1 user grupo         141 Feb 12 17:19 stdin
+--- Stop Module: auto at Sat Feb 13 06:55:33 2010 /rc=0 ---
+
+     Happy landing!
+
+--- Stop Module: auto at Sat Feb 13 06:55:33 2010 /rc=0 ---
+total 72707708
+-rw-r--r--  1 user grupo         141 2010-02-12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Caspt2.Input
+-rw-r--r--  1 user grupo     4321492 2010-02-12 06:18 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.GssOrb
+-rw-r--r--  1 user grupo    40940040 2010-02-12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.JobIph
+-rw-r--r--  1 user grupo    35331272 2010-02-13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.JobMix
+-rw-r--r--  1 user grupo          40 2010-02-12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.NqGrid
+-rw-r--r--  1 user grupo    16892696 2010-02-12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OneInt
+-rw-r--r--  1 user grupo    19539752 2010-02-12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OneRel
+-rw-r--r--  1 user grupo 20971520000 2010-02-13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt
+-rw-r--r--  1 user grupo 20971520000 2010-02-12 06:17 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt1
+-rw-r--r--  1 user grupo 20971520000 2010-02-12 06:17 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt2
+-rw-r--r--  1 user grupo 11293722624 2010-02-12 04:25 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.OrdInt3
+-rw-r--r--  1 user grupo     4321492 2010-02-12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RasOrb.1
+-rw-r--r--  1 user grupo         197 2010-02-12 06:18 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Rasscf.Input
+-rw-r--r--  1 user grupo     5688600 2010-02-12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.rasscf.molden
+-rw-r--r--  1 user grupo    30818184 2010-02-13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Restart
+-rw-r--r--  1 user grupo           2 2010-02-13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.returncode
+-rw-r--r--  1 user grupo     8794120 2010-02-13 06:55 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RunFile
+-rw-r--r--  1 user grupo        2147 2010-02-12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Seward.Input
+-rw-r--r--  1 user grupo     4321492 2010-02-12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.SpdOrb.1
+-rw-r--r--  1 user grupo       21926 2010-02-12 00:37 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.SymInfo
+-rw-r--r--  1 user grupo     4320835 2010-02-12 17:19 ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.TmpOrb
+-rw-r--r--  1 user grupo        9383 2010-02-12 16:41 CI_Iterations.txt
+-rw-r--r--  1 user grupo        3801 2010-02-12 06:18 CleanInput
+-rw-r--r--  1 user grupo        1724 2010-02-13 06:55 extract.xml
+lrwxrwxrwx  1 user grupo          67 2010-02-12 06:18 INPORB -> /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.McOrb
+-rw-r--r--  1 user grupo         214 2010-02-12 07:50 molcas.control
+-rw-r--r--  1 user grupo         530 2010-02-12 17:19 molcas.env
+-rw-r--r--  1 user grupo        2651 2010-02-13 06:55 molcas_info
+lrwxrwxrwx  1 user grupo          68 2010-02-12 17:19 PT2ORB -> /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.Pt2Orb
+lrwxrwxrwx  1 user grupo          68 2010-02-12 06:18 RASORB -> /home/user/calc.dir/ACE_CX5_T_CAS16X14_AUDZ_CAS16X14_AUTZ.RasOrb
+-rw-r--r--  1 user grupo         141 2010-02-12 17:19 stdin
