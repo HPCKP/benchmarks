@@ -1,0 +1,222 @@
+!/bin/bash
+
+#$-N Sc3NC80d5h_iso2_freq
+#$-cwd
+#$-q xeon.wf.3.0.gb@maginet-ii156
+
+export SCM_MACHINEFILE=/home/cluster/$HOSTNAME
+export NSCM=$( /usr/local/bin/nproc $SCM_MACHINEFILE )
+
+export ADFHOME=/usr/local/adf2007.01
+export ADFBIN=$ADFHOME/bin
+export DIRAC="$ADFBIN/dirac -n1"
+export ADF=$ADFBIN/adf
+export ADFRESOURCES=$ADFHOME/atomicdata
+export SCMLICENSE=$ADFHOME/license
+
+export SCM_TMPDIR=/scratch
+export SCM_USETMPDIR=yes
+
+export MPI_REMSH=rsh
+
+cd $TMPDIR
+
+$DIRAC <$ADFHOME/atomicdata/Dirac/C.1s
+rm fort.*
+
+$DIRAC <$ADFHOME/atomicdata/Dirac/N.1s
+rm fort.*
+
+$DIRAC <$ADFHOME/atomicdata/Dirac/Sc.2p
+rm fort.*
+
+mv TAPE12 t12rel
+
+$ADFBIN/adf -n1 <<eor
+create  C  $ADFRESOURCES/ZORA/TZP/C.1s
+xc
+GGA gradients becke perdew
+end
+relativistic scalar zora
+corepotentials t12rel   <++
+C    1
+end
+end input
+eor
+mv TAPE21  t21.C.1s
+rm DUMF* SCRTC* TAPE* F*  logfile  *INFO*
+
+$ADFBIN/adf <<eor
+create  N  $ADFRESOURCES/ZORA/TZP/N.1s
+xc
+GGA gradients becke perdew
+end
+relativistic scalar zora
+corepotentials t12rel   <++
+N    2
+end
+end input
+eor
+mv TAPE21  t21.N.1s
+rm DUMF* SCRTC* TAPE* F*  logfile  *INFO*
+
+$ADFBIN/adf -n1 <<eor
+create  Sc  $ADFRESOURCES/ZORA/TZP/Sc.2p
+xc
+GGA gradients becke perdew
+end
+relativistic scalar zora
+corepotentials t12rel   <++
+Sc    3
+end
+end input
+eor
+mv TAPE21  t21.Sc.2p
+rm DUMF* SCRTC* TAPE* F*  logfile  *INFO*
+
+
+$ADFBIN/adf <<EOF
+
+Sc3NC80 d5h iso2
+
+fragments
+ C       t21.C.1s
+ N       t21.N.1s
+ Sc      t21.Sc.2p
+end
+
+
+charge  0   0
+
+atoms
+C	  2.441473    2.154867    2.586351
+C	  1.156327    2.300309    3.145462
+C	  2.754317    2.805645    1.323812
+C	  3.117810    0.882766    2.614782
+C	  0.587330    1.173150    3.826977
+C	  0.231607    3.189782    2.511950
+C	 -0.823090    0.924431    3.861149
+C	  1.264743   -0.086691    3.909541
+C	  0.557739    3.924285    1.305201
+C	 -1.180244    2.927060    2.519796
+C	  1.807127    3.618914    0.622656
+C	 -0.690960    4.173704    0.597356
+C	  1.802191    3.573268   -0.850320
+C	  3.660435    1.939882    0.623723
+C	 -1.744523    1.789054    3.175044
+C	 -1.740933    3.459121    1.300591
+C	 -2.907742    1.211765    2.623743
+C	 -1.036294   -0.493251    4.009655
+C	 -3.459825    1.706299    1.377739
+C	 -3.092477   -0.219311    2.661462
+C	 -0.695713    4.122670   -0.838047
+C	  0.547101    3.833564   -1.539785
+C	 -1.749036    3.376196   -1.496499
+C	 -2.838708    2.766871    0.656556
+C	 -2.841776    2.725595   -0.808780
+C	 -4.020658    0.577881    0.687797
+C	  2.746507    2.726033   -1.511509
+C	  3.656716    1.901847   -0.771310
+C	  2.421576    2.006438   -2.731723
+C	  0.214154    3.047700   -2.710435
+C	 -2.156840   -1.084214    3.309534
+C	 -3.766888   -0.613519    1.438504
+C	 -1.937251   -2.370072    2.720434
+C	  0.278425   -1.140727    4.065669
+C	 -2.600961   -2.750246    1.490581
+C	 -0.632505   -3.017672    2.753109
+C	 -4.025514    0.537769   -0.708792
+C	 -3.468829    1.627344   -1.466277
+C	 -3.775154   -0.693875   -1.393980
+C	 -3.468818   -1.848618    0.788489
+C	 -3.473151   -1.889254   -0.675607
+C	 -1.734793   -3.653263    0.803975
+C	 -1.197783    2.787256   -2.695020
+C	 -2.922527    1.063697   -2.683150
+C	  0.508123   -2.408413    3.386711
+C	 -0.501553   -3.772686    1.518082
+C	  1.754375   -2.565681    2.704864
+C	  1.895285   -3.357224    1.494298
+C	  2.773911   -1.530594    2.663397
+C	 -1.739971   -3.692581   -0.601075
+C	 -2.610904   -2.828907   -1.331628
+C	 -0.509751   -3.849802   -1.314604
+C	  0.752155   -3.896748    0.832294
+C	  0.747760   -3.937372   -0.632507
+C	  3.004335   -2.828651    0.764550
+C	 -3.105093   -0.367109   -2.638963
+C	 -1.953021   -2.516395   -2.585953
+C	  2.526845   -0.253854    3.231865
+C	  3.524992   -1.677298    1.448115
+C	  3.855899    0.735957    1.380335
+C	  2.999741   -2.867170   -0.638167
+C	  1.886817   -3.435173   -1.329033
+C	  3.516324   -1.756201   -1.387787
+C	  3.993079   -0.526055    0.728899
+C	  3.988615   -0.567385   -0.738370
+C	 -0.647274   -3.157493   -2.582053
+C	  1.740511   -2.712981   -2.581890
+C	  2.760229   -1.677308   -2.605996
+C	  3.848796    0.657511   -1.458506
+C	  3.098992    0.732791   -2.693240
+C	  2.505990   -0.435976   -3.242148
+C	  1.238375   -0.304410   -3.917779
+C	  0.252112   -1.363021   -4.010690
+C	  0.560891    0.957397   -3.903589
+C	  0.485137   -2.581199   -3.250518
+C	 -1.066673   -0.717961   -4.001085
+C	 -2.182997   -1.269845   -3.255366
+C	 -0.850265    0.707107   -3.922898
+C	 -1.765535    1.611697   -3.276486
+C	  1.133192    2.123393   -3.292794
+N	 -0.233101    0.061187   -0.001644
+Sc	 -0.130688    2.079865   -0.021893
+Sc	 -0.243908   -0.829196   -1.826001
+Sc	 -0.173889   -0.773200    1.831075
+END
+
+units
+length angstrom
+END
+
+xc
+GGA gradients becke perdew
+END
+
+relativistic scalar zora
+corepotentials t12rel   <++
+ C      1
+ N      2
+ Sc     3
+end
+
+scf
+ iterations  100
+end
+
+geometry
+converge grad=1.e-2
+end
+
+AnalyticalFreq
+end
+
+thermo T=300
+
+
+integration 6.0
+
+eprint
+ EIGVAL  20 20
+ SFO NOOVL, NOEIG
+ ORBPOP 20 20
+ subend
+end
+
+end input
+EOF
+
+mv TAPE21 /home/arodrig/ADF/RAMON/Sc3NC80/Sc3NC80d5h_iso2_freq.t21
+rm [A-Z]* t21* t12*
+ 
+

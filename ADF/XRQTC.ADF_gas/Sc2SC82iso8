@@ -1,0 +1,212 @@
+!/bin/bash
+
+#$-N Sc2SC82iso8con1
+#$-cwd
+#$-q *2neh*,*2opt*,*xeon* 
+
+NOM=$$
+mkdir $NOM
+cd $NOM
+
+. /usr/local/bin/adfheader 2007
+
+
+$DIRAC <$ADFHOME/atomicdata/Dirac/C.1s
+rm fort.*
+
+$DIRAC <$ADFHOME/atomicdata/Dirac/S.2p
+rm fort.*
+
+$DIRAC <$ADFHOME/atomicdata/Dirac/Sc.2p
+rm fort.*
+
+mv TAPE12 t12rel
+
+$ADFBIN/adf -n1 <<eor
+create  C  $ADFRESOURCES/ZORA/TZP/C.1s
+xc
+GGA gradients becke perdew
+end
+relativistic scalar zora
+corepotentials t12rel   <++
+C    1
+end
+end input
+eor
+mv TAPE21  t21.C.1s
+rm DUMF* SCRTC* TAPE* F*  logfile  *INFO*
+
+$ADFBIN/adf <<eor
+create  S  $ADFRESOURCES/ZORA/TZP/S.2p
+xc
+GGA gradients becke perdew
+end
+relativistic scalar zora
+corepotentials t12rel   <++
+S    2
+end
+end input
+eor
+mv TAPE21  t21.S.2p
+rm DUMF* SCRTC* TAPE* F*  logfile  *INFO*
+
+$ADFBIN/adf -n1 <<eor
+create  Sc  $ADFRESOURCES/ZORA/TZP/Sc.2p
+xc
+GGA gradients becke perdew
+end
+relativistic scalar zora
+corepotentials t12rel   <++
+Sc    3
+end
+end input
+eor
+mv TAPE21  t21.Sc.2p
+rm DUMF* SCRTC* TAPE* F*  logfile  *INFO*
+
+
+$ADFBIN/adf <<EOF
+
+Sc3NC88orientación4
+
+fragments
+ C       t21.C.1s
+ S       t21.S.2p
+ Sc      t21.Sc.2p
+end
+
+charge    0   0
+
+atoms
+ C    3.23540   -0.94300    2.52220
+ C    3.92500   -0.33770    1.43650
+ C    2.66270   -2.21980    2.39310
+ C    2.37900   -0.13850    3.41130
+ C    3.85460    1.10090    1.30980
+ C    4.09480   -1.09490    0.26570
+ C    3.85160    1.71480    0.06160
+ C    3.01080    1.89310    2.21070
+ C    3.50100   -2.38730    0.13250
+ C    4.09160   -0.45150   -1.04230
+ C    2.69270   -2.92660    1.15250
+ C    3.17820   -2.57420   -1.27230
+ C    1.51830   -3.71680    0.77270
+ C    1.48550   -2.24540    3.24420
+ C    3.91880    0.93740   -1.15610
+ C    3.49590   -1.34700   -1.98270
+Sc   -1.69345   -0.44807   -0.08244
+ C    3.22420    1.42670   -2.29540
+ C    3.00600    2.91020    0.14360
+ C    2.64940    0.54450   -3.22620
+ C    2.36590    2.62050   -2.19640
+ C    2.07730   -3.30680   -1.63010
+ C    1.23320   -3.89230   -0.60540
+ C    1.22770   -2.85380   -2.71590
+ C    2.68270   -0.86960   -3.02930
+ C    1.50780   -1.65460   -3.41880
+ C    1.46860    1.20110   -3.76050
+ C    0.41580   -3.76660    1.65670
+ C    0.40420   -2.99920    2.89920
+ C   -0.91750   -3.81910    1.17260
+ C   -0.09920   -3.86490   -1.08620
+ C    2.22680    3.32630   -0.94990
+ C    1.27310    2.45230   -3.04820
+ C    0.96650    3.93380   -0.68120
+ C    2.50320    3.00440    1.47510
+ C   -0.15930    3.70370   -1.55690
+ C    0.47330    4.05650    0.63560
+ C    0.38670    0.46600   -4.14240
+ C    0.40160   -0.98640   -3.99260
+ C   -0.96420    0.94360   -3.86960
+ C   -0.05470    2.89370   -2.67830
+ C   -1.21570    2.07900   -3.08100
+ C   -1.36470    3.72990   -0.74720
+ C   -0.10260   -3.22070   -2.39530
+ C   -0.92990   -1.40430   -3.73300
+ C    1.20800    3.53340    1.73920
+ C   -0.98690    3.94850    0.58260
+ C    0.47820    2.97610    2.82940
+ C   -0.98200    2.86510    2.78220
+ C    0.97590    1.85900    3.53350
+ C   -1.71890    3.34510    1.65390
+ C   -2.91970    2.69880    1.33910
+ C   -3.35380    2.56550   -0.03150
+ C   -3.34850    1.53010    2.07130
+ C   -1.35510    1.67730    3.42170
+ C   -2.50470    2.94070   -1.08790
+ C   -2.44410    2.11340   -2.29080
+ C   -4.18240    1.38700   -0.11210
+ C   -3.32470    1.01440   -2.37010
+ C   -1.78160   -0.22440   -3.77100
+ C   -4.16860    0.62490   -1.26140
+ C   -2.93650   -0.19530   -3.03470
+ C    2.23640    1.27900    3.21060
+ C   -0.14680    1.02210    3.88990
+ C    1.28920   -0.91870    3.80220
+ C   -0.03960   -0.36010    3.93210
+ C   -1.20020   -1.17920    3.53710
+ C   -0.94720   -2.49560    3.11710
+ C   -2.49530    0.92320    3.00930
+ C   -4.17910    0.74570    1.19040
+ C   -2.43170   -0.53470    3.08750
+ C   -3.31400   -1.26990    2.26870
+ C   -1.76700   -3.13190    2.13460
+ C   -4.16280   -0.63020    1.28730
+ C   -4.14740   -1.44100    0.07730
+ C   -2.92510   -2.53350    1.71350
+ C   -4.15020   -0.82850   -1.16620
+ C   -3.30650   -1.33570   -2.20400
+Sc    1.86055   -0.31910   -1.12692
+ C   -3.30030   -2.57100    0.30450
+ C   -2.40820   -2.39680   -1.98320
+ C   -1.20530   -2.46020   -2.82870
+ C   -2.40490   -3.04100   -0.67480
+ C   -1.19850   -3.74690   -0.21450
+ S    0.11870   -0.07113   -0.47075
+END
+
+
+units
+length angstrom
+END
+
+xc
+GGA gradients becke perdew
+END
+
+relativistic scalar zora
+corepotentials t12rel   <++
+ C      1
+ S      2
+ Sc     3
+end
+
+scf
+ iterations    1000
+end
+
+geometry
+converge grad=1.e-2
+ iterations 60
+end
+
+integration 4.5
+
+eprint
+ EIGVAL  20 20
+ SFO NOOVL, NOEIG
+ ORBPOP 20 20
+ subend
+end
+
+maxmemoryusage 2000
+
+rm -r $NOM
+
+end input
+EOF
+ 
+
+
+ 
+

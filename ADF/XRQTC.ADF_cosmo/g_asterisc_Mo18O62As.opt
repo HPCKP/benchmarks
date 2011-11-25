@@ -1,0 +1,223 @@
+#!/bin/bash
+
+#$ -N g_asterisc_Mo18O62As.opt.in
+#$ -cwd
+#$ -q *pD*
+
+. /usr/local/bin/adfheader 2008
+
+NOM=$$
+mkdir $NOM
+cd $NOM
+
+
+#########################################################
+
+$ADFBIN/dirac <$ADFRESOURCES/Dirac/Mo.3d
+rm fort.*
+
+$ADFBIN/dirac <$ADFRESOURCES/Dirac/O.1s
+rm fort.*
+
+$ADFBIN/dirac <$ADFRESOURCES/Dirac/As.3d
+rm fort.*
+mv TAPE12 t12rel
+
+$ADFBIN/adf -n1 <<eor
+create Mo $ADFRESOURCES/ZORA/TZP/Mo.3d
+xc
+ lda vwn
+ gradients becke perdew
+end
+relativistic scalar zora
+ corepotentials t12rel   <++
+ Mo   1
+end
+end input
+eor
+mv TAPE21  t21.Mo.3d.IV
+rm DUMF* SCRTC* TAPE* F*  logfile  *INFO*
+
+$ADFBIN/adf -n1 <<eor
+create O $ADFRESOURCES/ZORA/TZP/O.1s
+xc
+ lda vwn
+ gradients becke perdew
+end
+relativistic scalar zora
+ corepotentials t12rel   <++
+ O    2
+end
+end input
+eor
+mv TAPE21  t21.O.1s.IV
+rm DUMF* SCRTC* TAPE* F*  logfile  *INFO*
+
+$ADFBIN/adf -n1 <<eor
+create As $ADFRESOURCES/ZORA/TZP/As.3d
+xc
+ lda vwn
+ gradients becke perdew
+end
+relativistic scalar zora
+ corepotentials t12rel   <++
+ As   3
+end
+end input
+eor
+mv TAPE21  t21.As.3d.IV
+rm DUMF* SCRTC* TAPE* F*  logfile  *INFO*
+
+$ADFBIN/adf  <<eor
+TITLE a-(As Mo18 O62)3- opt PB86+COSMO  adf08, h2o, D3h
+
+fragments
+ Mo      t21.Mo.3d.IV
+ O       t21.O.1s.IV
+ As      t21.As.3d.IV
+end
+
+charge -6 0 
+
+ATOMS
+ As      0.000000     0.000000     2.008700  
+ Mo       0.092100     3.569300     1.898100  
+ Mo       0.092100    -3.569300     1.898100  
+ Mo       3.045000    -1.864400     1.898100  
+ Mo      -3.137100     1.704900     1.898100  
+ Mo      -3.137100    -1.704900     1.898100  
+ Mo       3.045000     1.864400     1.898100  
+ O       0.740300     1.282200     1.540600  
+ O      -1.480500     0.000000     1.540600  
+ O       0.740300    -1.282200     1.540600  
+ O       0.000000     0.000000     3.602400  
+ O      -2.449300     1.633100     3.721800  
+ O      -2.449300    -1.633100     3.721800  
+ O       3.385700     0.000000     1.589200  
+ O       2.638900     1.304600     3.721800  
+ O      -1.692800    -2.932100     1.589200  
+ O      -0.189600     2.937700     3.721800  
+ O      -0.189600    -2.937700     3.721800  
+ O      -1.692800     2.932100     1.589200  
+ O       2.638900    -1.304600     3.721800  
+ O      -4.000000     0.000000     2.185000  
+ O       2.000000     3.464100     2.185000  
+ O       2.000000    -3.464100     2.185000  
+ O      -0.183600     5.251800     2.207000  
+ O      -0.183600    -5.251800     2.207000  
+ O       4.640000    -2.466900     2.207000  
+ O      -4.456400     2.784900     2.207000  
+ O      -4.456400    -2.784900     2.207000  
+ O       4.640000     2.466900     2.207000  
+ Mo       0.995100    -1.723500     4.969400  
+ Mo      -1.990100    -0.000100     4.969400  
+ Mo       0.995100     1.723400     4.969400  
+ O      -0.769900     1.333500     5.689400  
+ O       1.539800     0.000000     5.689400  
+ O      -0.769900    -1.333500     5.689400  
+ O       1.610100    -2.788800     6.191800  
+ O      -3.220200     0.000000     6.191800  
+ O       1.610100     2.788800     6.191800  
+ As      0.000000     0.000000    -2.008700  
+ Mo      -0.092100    -3.569300    -1.898100  
+ Mo      -0.092100     3.569300    -1.898100  
+ Mo      -3.045000     1.864400    -1.898100  
+ Mo       3.137100    -1.704900    -1.898100  
+ Mo       3.137100     1.704900    -1.898100  
+ Mo      -3.045000    -1.864400    -1.898100  
+ O      -0.740300    -1.282200    -1.540600  
+ O       1.480500     0.000000    -1.540600  
+ O      -0.740300     1.282200    -1.540600  
+ O       0.000000     0.000000    -3.602400  
+ O       2.449300    -1.633100    -3.721800  
+ O       2.449300     1.633100    -3.721800  
+ O      -3.385700     0.000000    -1.589200  
+ O      -2.638900    -1.304600    -3.721800  
+ O       1.692800     2.932100    -1.589200  
+ O       0.189600    -2.937700    -3.721800  
+ O       0.189600     2.937700    -3.721800  
+ O       1.692800    -2.932100    -1.589200  
+ O      -2.638900     1.304600    -3.721800  
+ O       4.000000     0.000000    -2.185000  
+ O      -2.000000    -3.464100    -2.185000  
+ O      -2.000000     3.464100    -2.185000  
+ O       0.183600    -5.251800    -2.207000  
+ O       0.183600     5.251800    -2.207000  
+ O      -4.640000     2.466900    -2.207000  
+ O       4.456400    -2.784900    -2.207000  
+ O       4.456400     2.784900    -2.207000  
+ O      -4.640000    -2.466900    -2.207000  
+ Mo      -0.995100     1.723500    -4.969400  
+ Mo       1.990100     0.000100    -4.969400  
+ Mo      -0.995100    -1.723400    -4.969400  
+ O       0.769900    -1.333500    -5.689400  
+ O      -1.539800     0.000000    -5.689400  
+ O       0.769900     1.333500    -5.689400  
+ O      -1.610100     2.788800    -6.191800  
+ O       3.220200     0.000000    -6.191800  
+ O      -1.610100    -2.788800    -6.191800
+ O       0.000000     3.764500     0.000000
+ O       0.000000    -3.764500     0.000000
+ O       3.260153     1.882250     0.000000  
+ O      -3.260153    -1.882250     0.000000
+ O       3.260153    -1.882250     0.000000  
+ O      -3.260153     1.882250     0.000000
+END
+
+units
+ length angstrom
+END
+
+MAXMEMORYUSAGE 1024
+
+xc
+ lda vwn
+ gradients  becke perdew
+END
+
+scf
+ ITERATIONS  70
+END 
+
+integration 4.5
+
+relativistic scalar zora
+corepotentials t12rel    <++
+Mo     1
+O      2
+As     3
+end
+
+SOLVATION
+  Surf esurf
+  Div ndiv=5
+  Solv Eps=80
+  Scf var last
+  radii
+   O=1.52
+   Mo=0.644
+   As=1.50
+   subend
+end
+
+geometry
+Converge Grad=1e-3
+Step Rad=0.075  Angle=5
+ITERATIONS 200
+end
+
+eprint
+ eigval 5 5
+ SFO NOOVL,NOEIG
+ ORBPOP 5 5
+ subend
+end
+
+
+end input
+eor
+
+mv TAPE21 /home/alcazar/Mo18O54_XO4/Mo18O62As/gamma_asterisc/tape.t21
+mv LOGFILE /home/alcazar/Mo18O54_XO4/Mo18O62As/gamma_asterisc/LOGFILE
+rm -r $NOM
+
