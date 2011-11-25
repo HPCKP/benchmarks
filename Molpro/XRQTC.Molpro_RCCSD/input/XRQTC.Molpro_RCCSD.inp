@@ -1,0 +1,22 @@
+***, TS1 CH2=CH-CHO + HO -> HOCH2-CH-CHO           
+MEMORY,1000,M
+print,orbitals
+symmetry,nosym,noorient
+angstrom
+geometry={
+1,C,0,-1.108221,-0.933738,0.207509,
+2,C,0,0.032005,-0.636964,-0.431831,
+3,C,0,1.145006,0.017148,0.344740,
+4,O,0,2.192409,0.365541,-0.114224,
+5,H,0,-1.182313,-0.810449,1.290340,
+6,H,0,-1.937918,-1.437524,-0.289053,
+7,H,0,0.183157,-0.806346,-1.501072,
+8,H,0,0.892673,0.154918,1.429846,
+9,O,0,-1.802300,1.000463,0.015360,
+10,H,0,-1.489204,1.292691,-0.861652,
+}
+basis=AVTZ                    ! base
+SPHERICAL                     ! calcul d'integrals amb funcions esferiques
+{rhf;                         ! calcul rhf
+wf,39,1,1}                    ! numero d'electrons,representacio  irreduible,2S
+{rccsd(t);thresh,coeff=1.d-3} ! calcul ccsd(t)
