@@ -1,0 +1,7 @@
+
+ NSTEP =   500000   TIME(PS) =     700.000  TEMP(K) =   300.99  PRESS =     0.0
+ Etot   =   -160249.4429  EKtot   =     66129.0416  EPtot      =   -226378.4846
+ BOND   =     39983.2521  ANGLE   =      4605.4050  DIHED      =      5923.2114
+ 1-4 NB =      1992.2479  1-4 EEL =     20048.1925  VDWAALS    =     37348.2169
+ EELEC  =   -336279.0104  EHBOND  =         0.0000  RESTRAINT  =         0.0000
+ Ewald error estimate:   0.5646E-04

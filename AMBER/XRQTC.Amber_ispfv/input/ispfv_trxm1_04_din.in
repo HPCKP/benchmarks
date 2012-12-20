@@ -1,0 +1,16 @@
+
+ 3-paso Estabilizacion (c)
+ &cntrl
+     imin=0, irest=1, ntx=7,
+     ntpr=1000, 
+     ntc=1,ntf=1, dt=0.001, tol=0.000001,
+     cut = 10.0, 
+     scee=1.2,
+     ntb=1,igb=0,
+     ntp=0,
+     nstlim=500000,
+     ntt=1, tautp=0.2, taup=0.2,
+     tempi=300.0, temp0=300.0,
+     ntwv=1000, ntwe=1000, ntwx=1000,ntwr=1000,  
+     ntr=0,ibelly=0,
+ &end
